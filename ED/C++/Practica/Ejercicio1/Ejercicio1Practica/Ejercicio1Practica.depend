@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1510584420 source:c:\unq\ed\c++\practica\ejercicio1\ejercicio1practica\main.cpp
+	<iostream>
+	"Ejercicio1Practica.h"
+
+1510584022 source:c:\unq\ed\c++\practica\ejercicio1\ejercicio1practica\ejercicio1practica.cpp
+	<iostream>
+	"Ejercicio1Practica.h"
+
+1510586669 c:\unq\ed\c++\practica\ejercicio1\ejercicio1practica\ejercicio1practica.h
+	<iostream>
+

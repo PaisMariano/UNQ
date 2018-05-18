@@ -1,0 +1,79 @@
+Código de ejemplo: Constructores
+--------------------------------
+
+UNQ - Técnicas Avanzadas de Programación - 2010 semestre 1
+
+1)
+En el primer ejemplo (la clase Empleado), se muestra un constructor que deja en estado 
+inconsistente a sus variables. Definimos la clase Empleado como:
+
+Empleado
+    Variables de instancia:
+        *. nombre : String
+        *. sueldo : Integer
+    Protocolo:
+        *. nombre (getter)
+        *. sueldo (getter)
+
+Qué pasa cuando construimos un nuevo Empleado ?
+
+|emp|
+emp := Empleado new.
+
+Tanto 'nombre' como 'sueldo' quedan en nil (la referencia por defecto de Smalltalk), lo que las hace 
+inutilizables, por ejemplo si queremos sumar a 'sueldo' un número (algo que debería funcionar),
+obtenemos un error.
+
+|suma|
+suma := emp sueldo + 300.
+
+El error es que nil (el valor de 'sueldo') no entiende el mensaje #+. Si 'sueldo' hubiese sido
+inicializada como un número, no hubiese ocurrido el error.
+
+2)
+En el siguiente ejemplo (la clase Impresora) se muestra un constructor que da valores por 
+defecto a sus variables. La clase Impresora esta definida como:
+
+Impresora
+    Variables de instancia:
+        *. nombre : String
+        *. papel : String
+        *. documentos : OrderedCollection
+    Protocolo:
+        *. nombre (getter)
+        *. papel (getter)
+        *. documentos (getter)
+        *. nombre: (setter)
+        *. papel: (setter)
+        *. documentos: (setter)
+
+El lugar donde los valores por defecto van a ser ubicados es en en el método #initialize,
+que es llamado inmediatamente despues del #new.
+
+De esta forma ya no tenemos errores de referencias a "nil", pero a veces no se pueden dar
+valores por defecto. De todos modos con los setters podemos cambiar el valor de las variables
+una vez creado el objeto.
+
+3)
+En el ejemplo de la clase "Libro", se muestra un constructor que recibe por parámetro los
+valores necesarios para inicializarse correctamente. Definimos "Libro" como:
+
+Libro
+    Variables de instancia:
+        *. titulo : String
+        *. autor : String
+        *. edicion : Integer
+    Protocolo:
+	getters
+        setters
+
+Lo que se hace aquí es crear un nuevo método de clase "new" pero que reciba los parámetros
+necesarios, y el #new que por defecto provee Smalltalk se puede eliminar, o lanzar un error
+para evitar que el objeto quede en estado inconsistente.
+
+Entonces, creamos estos dos nuevos métodos:
+
+#newTitulo: autor: edicion: (método de clase - en lugar del #new)
+#initTitulo: autor: edicion: (método de instancia - en lugar del #initialize)
+
+En este ejemplo se decidió anular el constructor #new, lanzando un error.

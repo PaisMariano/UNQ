@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1509936354 source:c:\unq\ed\c++\queue con iteradores\queue\main.cpp
+	<iostream>
+	<stdio.h>
+	<malloc.h>
+	"Iterador.h"
+
+1509936337 source:c:\unq\ed\c++\queue con iteradores\queue\iterador.cpp
+	<iostream>
+	<stdio.h>
+	<malloc.h>
+	"Iterador.h"
+
+1509844998 c:\unq\ed\c++\queue con iteradores\queue\iterador.h
+	<iostream>
+

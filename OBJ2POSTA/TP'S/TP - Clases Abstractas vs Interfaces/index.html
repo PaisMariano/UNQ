@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Trabajo Práctico – Clases Abstractas vs. Interfaces </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Diego Cano, Gabriel Maljkovich" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header"  style="background-image: url(logo_unqui.png); background-repeat: no-repeat;"><div id="headerContent">Trabajo Práctico – Clases Abstractas vs. Interfaces</div></div>
+<div id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Trabajo Práctico – Clases Abstractas vs. Interfaces</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Trabajo Práctico – Clases Abstractas vs. Interfaces</h1></div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice" id="id2">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Objetivos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_41_2" class="block iDevice_content">
+<p> Comprender las diferencias, ventajas y desventajas del uso de clases abstractas e interfaces en Java; tanto a nivel de diseño como de implementación.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id5">
+<div class="iDevice emphasis0">
+<div id="ta5_85" class="block iDevice_content">
+<h2 align="justify" lang="es-ES"><span color="#4f81bd"><span face="Arial, sans-serif"><span size="3">Tips:</span></span></span></h2>
+<ul>
+<li>
+<p><span face="Arial, sans-serif"><span size="3">Recuerde que para validar su implementación debe crear <strong>tests de unidad</strong>.</span></span></p>
+</li>
+<li>
+<p><span color="#000000"><span face="Arial, sans-serif"><span size="3">Lea la documentación de las clases del sistema que va a manipular como así también los métodos que implementan. De esta forma va a poder saber cómo utilizar sus instancias o métodos de clase. Si no se visualiza el código fuente en su ambiente de programación recuerde <a href="https://sites.google.com/site/poo2tpi/recursos">los videos tutoriales</a> que están publicados en la página de la materia.</span></span></span></p>
+</li>
+<li>
+<p><span face="Arial, sans-serif"><span size="3">Recuerde que además de las clases presenciales puede hacer uso de la lista de la materia para evacuar cualquier duda o comentario que tenga sobre los trabajos prácticos. La lista para realizar consultas <a href="mailto:tpi-est-obj2@listas.unq.edu.ar">tpi-est-obj2@listas.unq.edu.ar</a></span></span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id7">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Interfaces en Java</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_46_2" class="block iDevice_content">
+<p><span color="#000000"><span face="Arial, sans-serif"><span size="3">En Java, una interface se define de la siguiente manera:<br /></span></span></span></p>
+<p class="western" style="margin-left: 1.91cm; margin-bottom: 0cm; line-height: 100%;" align="justify" lang="es-ES"><span style="font-size: small;"><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR"><b>package </b></span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR">nombrePaquete</span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR"><b>;</b></span></span></span></span></span></p>
+<p class="western" style="margin-left: 1.91cm; text-indent: 0.59cm; margin-bottom: 0cm; line-height: 100%;" align="justify"><span style="font-family: Courier New,monospace; font-size: small;" face="Courier New, monospace"><span size="3">{imports}</span></span></p>
+<p class="western" style="margin-left: 1.91cm; margin-bottom: 0cm; line-height: 100%;" align="justify" lang="es-ES"><span style="font-size: small;"><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR">[</span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR"><b>public</b></span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR">]</span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR"><b> interface </b></span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR">NombreInterfaz [</span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR"><b>extends ListaDe</b></span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR">SuperInterfaces]</span></span></span></span><span style="color: #000000;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"><span lang="es-AR"><b> {</b></span></span></span></span></span></p>
+<p class="western" style="margin-left: 1.91cm; text-indent: 0.59cm; margin-bottom: 0cm; line-height: 100%;" align="justify"><span style="font-family: Courier New,monospace; font-size: small;" face="Courier New, monospace"><span size="3">[Constantes]</span></span></p>
+<p class="western" style="margin-left: 1.91cm; text-indent: 0.59cm; margin-bottom: 0cm; line-height: 100%;" align="justify"><span style="font-family: Courier New,monospace; font-size: small;" face="Courier New, monospace"><span size="3">[Signaturas de métodos]</span></span></p>
+<p class="western" style="margin-left: 1.91cm; margin-bottom: 0cm; line-height: 100%;" align="justify"><span style="font-family: Courier New,monospace; font-size: small;" face="Courier New, monospace"><span size="3"><b>}</b></span></span></p>
+<p><span color="#000000"><span face="Arial, sans-serif"><span size="3">Las clases que necesiten implementar interfaces deberán hacer de la siguiente manera:</span></span></span></p>
+<p class="western" style="margin-left: 1.91cm; margin-bottom: 0cm; line-height: 100%;" align="justify" lang="es-ES"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span style="font-size: medium;" size="3">class NombreDeLaClase implements InterfaceUno, InterfaceDos…{}</span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice" id="id8">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad de lectura: clases abstractas e interfaces</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_47_4" class="block iDevice_content">
+<p>Lea el siguiente material online:</p>
+<ul>
+<li>What is inheritance? <a href="https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html">https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html</a></li>
+<li>Multiple Inheritance of State, Implementation, and Type <a href="https://docs.oracle.com/javase/tutorial/java/IandI/multipleinheritance.html">https://docs.oracle.com/javase/tutorial/java/IandI/multipleinheritance.html</a></li>
+<li>Interfaces: <a href="https://docs.oracle.com/javase/tutorial/java/concepts/interface.html">https://docs.oracle.com/javase/tutorial/java/concepts/interface.html</a></li>
+</ul>
+</div>
+<div id="ta8_47_5" class="block iDevice_content">
+<p><strong><span face="Arial, sans-serif"><span size="3">Luego, debata y responda las siguientes preguntas:</span></span></strong></p>
+<ol>
+<li><span face="Arial, sans-serif"><span size="3">¿Qué ventajas, en cuanto a polimorfismo, brindan las interfaces en Java?</span></span></li>
+<li><span face="Arial, sans-serif"><span size="3">¿Por qué no siempre puedo utilizar clases abstractas para agrupar clases polimórficas?</span></span></li>
+<li><span face="Arial, sans-serif"><span size="3">¿Qué ventajas tienen las clases abstractas sobre las interfaces?</span></span></li>
+<li><span face="Arial, sans-serif"><span size="3">¿Se puede instanciar una interface?</span></span></li>
+<li><span face="Arial, sans-serif"><span size="3">¿Por qué no es recomendable incrementar o modificar las firmas definidas en un interface?</span></span></li>
+<li><span face="Arial, sans-serif"><span size="3">¿Por qué, en lenguajes como Smalltalk, no es necesaria la implementación de interfaces?</span></span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id9">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">La caja del mercado central</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta9_48_2" class="block iDevice_content">
+<p align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">El mercado central necesita un sistema para el manejo de su caja y ud. es el encargado de diseñarlo e implementarlo. La especificación obtenida a través del analista funcional plantea que el funcionamiento de las cajas es sencillo: se registran los productos que desea adquirir el cliente y se obtiene el monto total a pagar que luego se informa al cliente. En particular, registrar un producto significa consultarle su precio para acumularlo en el monto a pagar y decrementar el stock existente de ese producto. El mercado diferencia a los productos de cooperativas de los productos de empresas tradicionales. La diferencia principal es que el producto de cooperativa aplica a su precio un descuento del 10%, en concepto de IVA, de su precio base.</span></span></span></p>
+<ol>
+<li align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Diseñe la solución con un diagrama de clases UML. </span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Implemente su diseño en Java. </span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Cree tests que verifiquen el correcto funcionamiento de su implementación.</span></span></span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id10">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">La caja del mercado central - Parte 2</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_49_2" class="block iDevice_content">
+<p align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Su sistema es un éxito, tal es así que el mercado ha decidido volver a contratarlo para actualizar el sistema y poder incorporar el pago de facturas de servicios e impuestos en las cajas de venta. Los servicios tienen un costo por unidad consumida y una cantidad de unidades consumidas en el período facturado, y para calcular el monto a pagar deben multiplicarse ambas cantidades. En el caso de los impuestos, el monto a pagar está determinado por la tasa del servicio que es un valor fijo en pesos. Además, es necesario registrar el pago del servicio/impuesto, que en ambos casos consiste en notificar a la agencia recaudadora. Para ello, se dispone de una Interface como se describe a continuación.</span></span></span></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%; padding-left: 30px;" align="justify" lang="es-ES"><span style="color: #000000; font-size: 10pt;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3">public interface Agencia{</span></span></span></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%; margin-left: 30px; padding-left: 30px;" align="justify" lang="es-ES"><span style="color: #000000; font-size: 10pt;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3"> public void registrarPago(Factura factura);</span></span></span></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%; margin-left: 30px;" align="justify" lang="es-ES"><span style="color: #000000; font-size: 10pt;" color="#000000"><span style="font-family: Courier New,monospace;" face="Courier New, monospace"><span size="3">}</span></span></span></p>
+<p align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Su sistema funciona correctamente, y usted no quiere modificar algo que funciona (si no está roto, no lo arregles). ¿Es posible diseñar una nueva solución al problema de cobrar en las cajas tanto productos como servicios alterando lo menos posible la solución existente? ¿Cómo? </span></span></span></p>
+<ol>
+<li align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Implemente su diseño en Java. </span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Cree tests con el fin de verificar el correcto funcionamiento de su implementación.</span></span></span><span color="#000000"><span face="Arial, sans-serif"><span size="3"></span></span></span></li>
+</ol>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id11">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Interfaces, Colecciones y otras yerbas</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_50_2" class="block iDevice_content">
+<p align="justify" lang="es-ES"><span face="Arial, sans-serif"><span size="3">Para resolver este ejercicio, será necesario que estudie el funcionamiento y protocolo de Collection, List, ArrayList y LinkedList. <br />Para ello, puede utilizar como bibliografía los sitios web de la documentación de clases e interfaces de Oracle:</span></span></p>
+<ul>
+<li style="margin-left: 30px;" align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">Collection: </span></span></span></span><span color="#0000ff"><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html" onclick="browseURL(this); return false"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html</span></span></span></a></span></li>
+<li style="margin-left: 30px;" align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">List: </span></span></span></span><span color="#0000ff"><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html" onclick="browseURL(this); return false"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">http://docs.oracle.com/javase/7/docs/api/java/util/List.html</span></span></span></a></span></li>
+<li style="margin-left: 30px;" align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">ArrayList: </span></span></span></span><span color="#0000ff"><a href="http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html" onclick="browseURL(this); return false"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html</span></span></span></a></span></li>
+<li style="margin-left: 30px;" align="justify" lang="es-ES"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">LinkedList: </span></span></span></span><span color="#0000ff"><a href="http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html" onclick="browseURL(this); return false"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">http://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html</span></span></span></a></span></li>
+</ul>
+<p align="justify" lang="es-ES"><strong><span color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="es-AR">Considere la siguiente clase:</span></span></span></span></strong></p>
+<p style="padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">public class ColeccionadorDeObjetos {</span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="es-ES"><span style="font-family: courier new,courier; font-size: 10pt;" color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="en-US">public Object getFirstFrom(XXX collection){</span></span></span></span></p>
+<p style="margin-left: 60px; padding-left: 30px;" align="justify" lang="es-ES"><span style="font-family: courier new,courier; font-size: 10pt;" color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="en-US"> return collection.get(0);</span></span></span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">}</span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">public void addLast (Object element, YYY collection){</span></span></p>
+<p style="margin-left: 60px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3"> collection.add(element);</span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">}</span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">public Collection getSubCollection(ZZZ collection, int from, int to){</span></span></p>
+<p style="margin-left: 60px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3"> return collection.subList(x,y);</span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">}</span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">public Boolean containsElement(WWW collection, Object element){</span></span></p>
+<p style="margin-left: 60px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3"> return collection.contains(element);</span></span></p>
+<p style="margin-left: 30px; padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">}</span></span></p>
+<p style="padding-left: 30px;" align="justify" lang="en-US"><span style="font-family: courier new,courier; font-size: 10pt;" face="Arial, sans-serif"><span size="3">}</span></span></p>
+<p><span color="#000000"><span face="Arial, sans-serif"><span size="3"><span lang="es-AR">Como notará, los tipos de las colecciones no están definidos. ¿Qué ocurriría si utiliza en lugar de XXX, YYY, WWW y ZZZ las clases e interfaces recientemente estudiadas?</span></span></span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id12">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">De Smalltalk/Wollok a Java: Personas y Mascotas</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_51_2" class="block iDevice_content">
+<ol>
+<li>
+<p style="margin-bottom: 0cm; line-height: 100%;" lang="es-ES">Defina la clase <span style="font-family: courier new,courier,monospace;">Persona</span> y modélela en Smalltalk/⁠⁠⁠Wollok. Una persona tiene un nombre, un DNI y una fecha de nacimiento, por lo que debe ser posible pedirle su nombre, DNI, fecha de nacimiento, edad y debe ser posible compararla en edad con otra persona mediante el mensaje “&lt;”.</p>
+</li>
+<li>
+<p style="margin-bottom: 0cm; line-height: 100%;" lang="es-ES">Defina la clase <span style="font-family: courier new,courier,monospace;">Mascota</span> y modélela en Smalltalk/⁠⁠⁠Wollok. Una mascota tiene un nombre y una raza (String), por lo que debe ser posible pedirle tales datos.</p>
+</li>
+<li>
+<p style="margin-bottom: 0cm; line-height: 100%;" lang="es-ES">Instancie dos <span style="font-family: courier new,courier,monospace;">Persona</span>s, dos <span style="font-family: courier new,courier,monospace;">Mascota</span>s e inserte los cuatro objetos en una colección. Itere sobre la colección e imprima un listado con los nombres de todos los objetos de la misma.</p>
+</li>
+<li>
+<p style="margin-bottom: 0cm; line-height: 100%;" lang="es-ES">Durante la iteración, ¿fue necesario distinguir si el objeto era una <span style="font-family: courier new,courier,monospace;">Persona</span> o una <span style="font-family: courier new,courier,monospace;">Mascota</span> para poder imprimir su nombre? ¿Cómo se llama el mecanismo de abstracción que permite esto?</p>
+</li>
+<li>
+<p style="margin-bottom: 0cm; line-height: 100%;" lang="es-ES">¿Podría asegurar que tanto mascotas como personas respondan al mensaje <span style="font-family: courier new,courier,monospace;">getName()</span>mediante herencia? ¿Cómo? ¿Qué ocurre si <span style="font-family: courier new,courier,monospace;">Persona</span> es subclase de otra clase que no puede ser modificada por ud.? ¿De qué otra manera puede asegurar el polimorfismo, teniendo en cuenta que está implementando en Java?</p>
+</li>
+<li>
+<p style="margin-bottom: 0cm; line-height: 100%;" lang="es-ES">Implemente, ahora en Java, los puntos 1, 2 y 3 según las consideraciones de 4 y 5.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

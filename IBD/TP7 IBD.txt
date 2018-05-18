@@ -1,0 +1,54 @@
+select distinct codCli, nombre
+from (cliente natural join factura) natural join itemfactura
+where nomProd = "Menganol" and year(fecha) = 2008
+order by nomProd;
+
+
+-- "codigo y nombre de los clientes que compraron Bidu, sin repetidos, ordenados x nombre.
+-- idem que compraron Bidu en junio de 2008
+-- idem que hicieron facturas sobre el deposito de Dominico."
+
+
+select codCli, nombre, numFact, fecha, importe, compraMaxima, compraMaxima - importe as diferencia
+from cliente natural join factura
+where compraMaxima < importe
+order by numFact;
+
+
+
+
+-- <codCli, nomCli, numFact, fecha, importe, compraMaxima, diferencia> para las facturas que superan
+-- el maximo del cliente, ordenadas x nro de factura.
+
+
+select codCli, nombre, numFact, fecha, cantidad
+from (cliente natural join factura) natural join itemfactura
+where nomProd = "Bidu"
+order by fecha, codCli
+
+
+-- <codCli, nomCli, numFact, fecha, cantidad> para las compras de Bidu, ordenadas x fecha y cod cliente.
+-- lo mismo ordenado x cod cliente y fecha.
+-- lo mismo ordenado x cantidad de la compra mas grande a la mas chica.
+
+
+select nomProd, stkMinimo, nombre, numFact, fecha, cantidad
+from ((cliente natural join itemfactura) natural join factura) natural join producto
+where stkMinimo < 20
+order by nomProd, fecha
+
+select distinct codCli, nombre 
+from(cliente natural join itemfactura) 
+where nomProd = "Menganol" or nomProd = "Vitina"
+
+select  codCli, nombre, ifNull (codCliContacto, "SIN CONTACTO") as Contacto
+from cliente
+
+select *
+from cliente
+
+-- 1. <prod, stkmin, codCli, nomCli, numFact, fecha, cant> para los productos de stk minimo menor a 20,
+-- ordenado x producto y fecha.
+-- 2. codigo y nombre de clientes que compraron Bidu o Vitina, sin repetidos.
+-- 3. para cada cliente: codigo, nombre, codigo de contacto o \SIN CONTACTO".
+

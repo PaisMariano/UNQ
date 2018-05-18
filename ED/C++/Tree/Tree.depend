@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1509209864 source:c:\users\publico\desktop\practica de c++\tree\tree.cpp
+	"Tree.h"
+
+1509209864 c:\users\publico\desktop\practica de c++\tree\tree.h
+	<iostream>
+

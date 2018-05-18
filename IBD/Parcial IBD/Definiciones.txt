@@ -1,0 +1,17 @@
+UNREPEATABLE READ
+Another problem that may occur is called unrepeatable read, where a transaction T reads an item twice and the item is changed by another transaction T between the two reads. Hence, T receives different values for its two reads of the same item. This may occur, for example, if during an airline reservation transaction, a customer is inquiring about seat availability on several flights. When the customer decides on a particular flight, the transaction then reads the number of seats on that flight a second time before completing the reservation.
+
+ACID
+
+1. Atomicity: A transaction is an atomic unit of processing; it is either performed in its entirety or not performed at all.
+2. Consistency preservation: A transaction is consistency preserving if its complete execution take(s) the database from one consistent state to another.
+3. Isolation: A transaction should appear as though it is being executed in isolation from other transactions. That is, the execution of a transaction should not be interfered with by any other transactions executing concurrently.
+4. Durability or permanency: The changes applied to the database by a committed transaction must persist in the database. These changes must not be lost because of any failure.
+
+ISOLATIONS LEVELS
+The isolation level option is specified using the statement ISOLATION LEVEL <isolation>, where the value for <isolation> can be READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, or SERIALIZABLE (Note 14). The default isolation level is SERIALIZABLE, although some systems use as READ COMMITTED their default. The use of the term SERIALIZABLE here is based on not allowing violations that cause dirty read, unrepeatable read, and phantoms (Note 15), and it is thus not identical to the way serializability was defined earlier in Section 19.5. If a transaction executes at a lower isolation level than SERIALIZABLE, then one or more of the following three violations may occur:
+
+1. Dirty read: A transaction may read the update of a transaction , which has not yet committed. If fails and is aborted, then would have read a value that does not exist and is incorrect.
+2. Nonrepeatable read: A transaction may read a given value from a table. If another transaction later updates that value and reads that value again, will see a different value.
+3. Phantoms: A transaction may read a set of rows from a table, perhaps based on some condition specified in the SQL WHERE-clause. Now suppose that a transaction inserts a new row that also satisfies the WHERE-clause condition used in , into the table used by . If is repeated, then will see a phantom, a row that previously did not exist.
+

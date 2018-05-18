@@ -1,0 +1,20 @@
+1º Abrir Eclipse
+2º Help > Eclipse MarketPlace
+3º Pestaña Search > Buscar Subversion Pack (SVN) > Install
+4º Window > open perspective > other > SVN repository exploring
+5º Abierto el explorador de internet con la cuenta gmail activa.
+6º abrir siguiente direccion (code.google.com/p/tp-final-objetos2)
+7º opcion source > copiar direccion https://tp-final-objetos2.googlecode.com/svn/
+8º a la izquierda SVN Repositories click derecho > new > repository location
+9º en la URL copiar la direccion del SVN del projecto https://tp-final-objetos2.googlecode.com/svn/
+10º En user pongo nombre de usuario cuenta gmail, luego en la pagina apreto generar contraseña y me da una que debo incluir en el eclipse
+11º Luego save authentification, Finish y listo.
+12º Click en https, proyecto trunk carpeta unq-tpi-obj2-tp-final 19 < version
+13º Boton derecho check out < baja toda la informacion
+14º Enhorabuena se ha instalado correctamente!!!
+
+
+Para poder subir o actualizar hago click derecho team synchronize > run
+
+para subir lo mio o baja hago click derecho en todo lo que quiero subir, Commit o Update.
+

@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Trabajo práctico de repaso y entrada en calor para la materia Objetos 2 de la UNQ</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Diego Torres" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.1 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<div id="header">
+<div id="headerContent">
+<h1>Trabajo práctico de repaso y entrada en calor para la materia Objetos 2 de la UNQ</h1>
+</div>
+</div>
+<div id="main">
+<div class="node level-1-node">
+<div class="nodeDecoration">
+<h1 id="exenode_0_Inicio" class="nodeTitle">Inicio</h1>
+</div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice" id="id0-0">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Objetivos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_41_2" class="block iDevice_content">
+<ul>
+<li>Refrescar conceptos básicos sobre programación orientada a objetos.</li>
+<li>Motivar la discusión sobre alternativas básicas de diseño de soluciones OO.</li>
+<li>Revisaremos errores comunes antes de comenzar con los temas propios de Objetos 2. </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="node level-2-node">
+<div class="nodeDecoration">
+<h1 id="exenode_1_ProgramacinOrientadaaObjetos" class="nodeTitle">Programación Orientada a Objetos</h1>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id2-1">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Evaluación de protocolos de una clase</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_43_2" class="block iDevice_content">
+<p>Sea la clase Rectángulo con 4 variables de instancia (esquinaSuperiorIzquierda, esquinaSuperiorDerecha, esquinaInferiorIzquierda y esquinaInferiorDerecha). Elija uno de los protocolos presentados a continuación y justifique su elección.  Recuerde que el protocolo es el conjunto de mensajes que entiende una clase o tipo.</p>
+<p> </p>
+<h4><strong>Opción 1)</strong></h4>
+<p><span style="font-family: 'courier new', courier;">Class Rectangulo&gt;&gt;new</span></p>
+<p><span style="font-family: 'courier new', courier;">Rectangulo&gt;&gt;esquinaSuperiorIzquierda: unPunto</span></p>
+<p><span style="font-family: 'courier new', courier;">Rectangulo&gt;&gt;esquinaSuperiorDerecha: unPunto</span></p>
+<p><span style="font-family: 'courier new', courier;">Rectangulo&gt;&gt;esquinaInferiorIzquierda: unPunto</span></p>
+<p><span style="font-family: 'courier new', courier;">Rectangulo&gt;&gt;esquinaInferiorDerecha: unPunto</span></p>
+<h4> Opcion 2)</h4>
+<p><span style="font-family: 'courier new', courier;">Class Rectangulo&gt;&gt;newEnOrigenEsquinaSuperiorIzquierda: unPunto alto: unNumero ancho:unNumero</span></p>
+<p><span style="font-family: 'courier new', courier;">Rectangulo&gt;&gt;reubicarEsquinaSuperiorIzquierdaEn: unPunto</span></p>
+<p><span style="font-family: 'courier new', courier;">Rectangulo&gt;&gt;ancho: unNumero</span></p>
+<p><span style="font-family: 'courier new', courier;">Rectangulo&gt;&gt;alto: unNumero</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id3-1">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">2 - Delegación</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_44_2" class="block iDevice_content">
+<p>En una oficina hay un jefe que tiene un secretario el cual administra un fichero. Dadas las siguientes implementaciones seleccione la mejor alternativa y justifique.</p>
+<h4>Opción 1)</h4>
+<p><span style="font-family: 'courier new', courier;">Jefe&gt;&gt;trabajarConFicha: unaFicha</span><br /><span style="font-family: 'courier new', courier;"> self secretario fichero buscar: unaFicha.</span></p>
+<h4>Opción 2)</h4>
+<p>J<span style="font-family: 'courier new', courier;">efe&gt;&gt;trabajarConFicha: unaFicha</span></p>
+<p><span style="font-family: 'courier new', courier;">self secretario buscharEnFichero: unaFicha</span></p>
+<p><span style="font-family: 'courier new', courier;">Secretario&gt;&gt;buscarEnFichero: unaFicha</span></p>
+<p><span style="font-family: 'courier new', courier;">self fichero buscar: unaFicha</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id4-1">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">3 - Polimorfismo</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_45_2" class="block iDevice_content">
+<p>Existen cuentas bancarias que pueden ser de tipo CajaDeAhorro y CuentaCorriente. Indique los defectos de cada una de las opciones.</p>
+<p><strong>Opción 1)</strong> </p>
+<p><span style="font-family: 'courier new', courier;">CuentaBancaria&gt;&gt;extraer:unMonto</span><br /><span style="font-family: 'courier new', courier;"> |rojo|</span><br /><span style="font-family: 'courier new', courier;"> self class = CuentaCorriente ifTrue:[rojo:= self rojoPermitido.]</span><br /><span style="font-family: 'courier new', courier;"> ifFalse:[rojo := 0.]</span><br /><span style="font-family: 'courier new', courier;"> (self saldo + rojo &gt;= unMonto) </span><br /><span style="font-family: 'courier new', courier;">ifTrue: [self saldo: self saldo - unMonto].</span></p>
+<p><strong>Opción 2)</strong> </p>
+<p><span style="font-family: 'courier new', courier;">CuentaBancaria&gt;&gt;extraer:unMonto</span><br /><span style="font-family: 'courier new', courier;">|rojo|</span><br /><span style="font-family: 'courier new', courier;"> self tipo = ’cuentacorriente’ </span><br /><span style="font-family: 'courier new', courier;">ifTrue:[rojo:= self rojoPermitido.]</span><br /><span style="font-family: 'courier new', courier;"> ifFalse:[rojo := 0.]</span><br /><span style="font-family: 'courier new', courier;"> (self saldo + rojo &gt;= unMonto) </span><br /><span style="font-family: 'courier new', courier;">ifTrue: [self saldo: self saldo - unMonto].</span></p>
+<p><strong>Opción 3)</strong> </p>
+<p><span style="font-family: 'courier new', courier;">CuentaBancaria&gt;&gt;extraer:unMonto</span><br /><span style="font-family: 'courier new', courier;"> ^self subclassResponsibility</span></p>
+<p><span style="font-family: 'courier new', courier;">CajaDeAhorro&gt;&gt;extraer:unMonto</span><br /><span style="font-family: 'courier new', courier;"> (self saldo &gt;= unMonto) </span><br /><span style="font-family: 'courier new', courier;"> ifTrue: [self saldo: self saldo - unMonto].</span></p>
+<p><span style="font-family: 'courier new', courier;">CuentaCorriente&gt;&gt;extraer:unMonto</span><br /><span style="font-family: 'courier new', courier;"> (self saldo + self rojoPermitido &gt;= unMonto ) </span><br /><span style="font-family: 'courier new', courier;"> ifTrue: [self saldo: self saldo - unMonto].</span></p>
+<p><strong>Opción 4)</strong> </p>
+<p><span style="font-family: 'courier new', courier;">CuentaBancaria&gt;&gt;extraer:unMonto</span><br /><span style="font-family: 'courier new', courier;"> (self chequearSaldoParaExtraccion:unMonto) </span><br /><span style="font-family: 'courier new', courier;"> ifTrue: [self saldo: self saldo - unMonto].</span></p>
+<p><span style="font-family: 'courier new', courier;">CajaDeAhorro&gt;&gt;chequearSaldoParaExtraccion:unMonto</span><br /><span style="font-family: 'courier new', courier;"> ^self saldo &gt;= unMonto</span></p>
+<p><span style="font-family: 'courier new', courier;">CuentaCorreinte&gt;&gt;chequearSaldoParaExtraccion:unMonto</span><br /><span style="font-family: 'courier new', courier;"> ^self saldo + self rojoPermitido &gt;= unMonto</span></p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice" id="id6-1">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad de lectura #1</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_42_4" class="block iDevice_content">
+<p>En el libro de Kent Beck Smalltalk Best Practices Patterns  se discute la utilización de accessors. <br />Lea las secciones Direct Variable Access e Indirect Variable Access que se encuentran al final de este Trabajo práctico </p>
+<p>Luego responda a las siguientes preguntas:</p>
+<ol>
+<li>¿Qué significa el acceso directo a las variables? De un ejemplo.</li>
+<li>¿Qué significa el acceso indirecto a las variables? De un ejemplo.</li>
+<li>Qué ventajas y desventajas presenta cada estrategia referida a los getters y setters.</li>
+</ol>
+<hr />
+<p></p>
+</div>
+<div id="ta6_42_5" class="block iDevice_content">
+<p><span style="font-weight: 400;">Fragmento del Libro: </span><b>Smalltalk Best Practice Patterns</b><span style="font-weight: 400;"> de </span><b>Kent Beck</b></p>
+<h2><b>Direct Variable Access</b></h2>
+<p><span style="font-weight: 400;">You need to access Common State as readably as possible.</span></p>
+<p><b>How do you get and set the value of an instance variable?</b></p>
+<p><span style="font-weight: 400;">Accessing state is a topic much like initialization. There are two good answers. One is more readable. One is more flexible. Also like initialization, you will find dogmatic adherents of both approaches. </span></p>
+<p><span style="font-weight: 400;">The simple, readable way to get and set the values of instance variables is to use the variables directly in all the methods that need their values. The alternative requires that you send a message every time you need to use or change an instance variable’s value.</span></p>
+<p><span style="font-weight: 400;">When I first started programming in Smalltalk, at Tektronix in the mid-80s, the debate about accessing state was hot. There were factions on both sides making self-important statements (don’t you just love research labs?)</span></p>
+<p><span style="font-weight: 400;">The Indirect Variable Access crowd has won the hearts and mind of the Smalltalking public, mostly I think because most of the high volume training companies teach indirect access. The issue is nowhere near as simple as “direct access bad, indirect access good”.</span></p>
+<p><span style="font-weight: 400;">I tried to reopen the debate in my Smalltalk Report column a few years back. A little brush fire started that eventually fizzled out. I was wondering if I was making too big a deal of the merits of direct access. Maybe I should have left well enough alone.</span></p>
+<p><span style="font-weight: 400;">Then I spent several months working for a client that insisted on indirect access. A professional programmer can take on any of a number of styles at will, so I was a good soldier and wrote my getters and setters.</span></p>
+<p><span style="font-weight: 400;">After I was done with that client, I wrote some code for myself. I was amazed at how much smoother it read than what I had been working on previously. The only difference in style was direct versus indirect access.</span></p>
+<p><span style="font-weight: 400;">What I noticed was that every time I read:</span></p>
+<blockquote>
+<p><span style="font-family: courier new,courier,monospace;"><span style="font-weight: 400;">...</span><span style="font-weight: 400;">self</span><span style="font-weight: 400;"> x</span><span style="font-weight: 400;">...</span></span></p>
+</blockquote>
+<p><span style="font-weight: 400;">I paused for a moment to remind myself that the message “x” was just fetching an instance variable. When I read:</span></p>
+<blockquote>
+<p><span style="font-family: courier new,courier,monospace;"><span style="font-weight: 400;">...</span><span style="font-weight: 400;">x</span><span style="font-weight: 400;">...</span></span></p>
+</blockquote>
+<p><span style="font-weight: 400;">I just kept reading.</span></p>
+<p><span style="font-weight: 400;">I told Ward of my experience. He had another good explanation. When you write classes that only have a handful of methods, adding a getting and a setting method can easily double the number of methods in your class. Twice as many methods to buy you flexibility that you may never use.</span></p>
+<p><span style="font-weight: 400;">On the other hand, it’s awful frustrating to get a class from someone and see the opportunity to quickly subclass it, only to discover that they used Direct Variable Access so there is no way to make the changes you want without changing most of the code in the superclass.</span></p>
+<p><b>Access and set variables directly. </b></p>
+<h2><b>Indirect Variable Access</b></h2>
+<p><span style="font-weight: 400;">You need to access Common State as flexibly as possible.</span></p>
+<p><b>How do you get and set an instance variable’s value?</b></p>
+<p><span style="font-weight: 400;">Now I have to display my true schizophrenia. Having convinced you in Direct Variable Access that just using variables is good enough, I’m going to ask you to ignore that crazy bastard and listen to me talk some sense here.</span></p>
+<p><span style="font-weight: 400;">When you use Direct Variable Access, many methods make the assumption that a variable’s value is valid. For some code this is a reasonable assumption. However, if you want to introduce Lazy Initialization, to stop storing and start computing the value, or if you want to change assumptions in a new subclass, you will be disappointed that the assumption of validity is wide spread.</span></p>
+<p><span style="font-weight: 400;">The solution is to always use Getting Methods and Setting Methods to access variables. Thus, instead of:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Point&gt;&gt;+ aPoint</span></strong></p>
+<p><span style="font-family: courier new,courier,monospace;"><span style="font-weight: 400;">^</span><span style="font-weight: 400;">x </span><span style="font-weight: 400;">+</span><span style="font-weight: 400;"> aPoint x </span><span style="font-weight: 400;">@</span> <span style="font-weight: 400;">(</span><span style="font-weight: 400;">y </span><span style="font-weight: 400;">+</span><span style="font-weight: 400;"> aPoint y)</span></span></p>
+</blockquote>
+<p><span style="font-weight: 400;">you would see:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Point&gt;&gt;+ aPoint</span></strong></p>
+<p><span style="font-family: courier new,courier,monospace;"><span style="font-weight: 400;">^</span><span style="font-weight: 400;">self</span><span style="font-weight: 400;"> x </span><span style="font-weight: 400;">+</span><span style="font-weight: 400;"> aPoint x </span><span style="font-weight: 400;">@</span> <span style="font-weight: 400;">(</span><span style="font-weight: 400;">self</span><span style="font-weight: 400;"> y </span><span style="font-weight: 400;">@</span><span style="font-weight: 400;"> aPoint y)</span></span></p>
+</blockquote>
+<p><span style="font-weight: 400;">If you browse the instance variable references of a class that uses Indirect Variable Access you will only see two references to each variable, the Getting Method and the Setting Method.</span></p>
+<p><span style="font-weight: 400;">What you give up with Indirect Variable Access is simplicity and readability. You have to define all those Getting Methods and Setting Methods. Even if you have your system do it for you, you have that many more methods to manage and document. As explained above, code using Direct Variable Access reads smoothly, because you are not forever reminding yourself “Oh yeah, that’s just a Getting Method.”</span></p>
+<p><b>Access and change an instance variable’s value only through a Getting Method and Setting Method.</b></p>
+<p><span style="font-weight: 400;">If you need to code for inheritance, use Indirect Variable Access. Future generations will thank you.</span></p>
+<p><span style="font-weight: 400;">You will need to define a Getting Method and a Setting Method for each variable. For variables holding collections, consider implementing Collection Accessor Methods and an Enumeration Method. </span></p>
+<h2><b>Getting Method</b></h2>
+<p><span style="font-weight: 400;">You are using Lazy Initialization or Indirect Variable Access.</span></p>
+<p><strong>How do you provide access to an instance variable?</strong></p>
+<p><span style="font-weight: 400;">Once you have decided to use Indirect Variable Access, you are committed to providing a message- based protocol for getting and setting variable values. The only real questions are how you use it and what you call it.</span></p>
+<p><span style="font-weight: 400;">Here’s the real secret of writing good Getting Methods- make them private at first. I cannot stress this enough. You will be fine if the same object invokes and implements the Getting Method. Another way of saying this is you always send messages invoking Getting Methods to “self”.</span></p>
+<p><span style="font-weight: 400;">Some people try to ensure this by prefixing “my” to the name of the method. Thus, instead of:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">x</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">^x</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">you have:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">myX </span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">^x</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">This makes sure that code like:</span></p>
+<blockquote>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">self bounds origin myX</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">looks stupid. I don’t feel this is necessary. I’d rather give programmers (myself included) the benefit of the doubt. If some other object absolutely has to send my private Getting Method, then they should be able to do so in as readable a manner as possible.</span></p>
+<p><b>Provide a method that returns the value of the variable. Give it the same name as the variable.</b></p>
+<p><span style="font-weight: 400;"><span style="font-weight: 400;">There are cases where you will publish the existence of Getting Methods for use in the outside world. You should make a conscious decision to do this after considering all the alternatives. It is much preferable to give an object more responsibility rather than have it act like a data structure. </span></span></p>
+<h2><b>Setting Method</b></h2>
+<p><span style="font-weight: 400;">You are using Indirect Variable Access.</span></p>
+<p><b>How you change the value of an instance variable?</b></p>
+<p><span style="font-weight: 400;">Everything I said once about Getting Methods I’d like to say twice about Setting Methods. Setting Methods should be even more private. It is one thing for another object to tear out your state, it is quite another for it to bash in new state. The possibilities for the code in the two objects to get out of sync and break in confusing ways are legion.</span></p>
+<p><span style="font-weight: 400;">Revisiting naming, I don’t feel it is necessary to prepend “my” to the names of Setting Methods. It might provide a little more protection from unauthorized use, but I don’t think the extra difficulty reading is worth it.</span></p>
+<p><b>Provide a method with the same name as the variable that takes a single parameter, the value to be set.</b></p>
+<p><span style="font-weight: 400;">Even if I use Indirect Variable Access, if I have a variable that is only set at instance creation time, I would not provide a Setting Method. I’d use the Creation Parameter Method to set the all the values at once. Once you have a Setting Method, though, you should use it for all changes to the variable.</span></p>
+<p><span style="font-weight: 400;"><span style="font-weight: 400;"><span style="font-weight: 400;">Set boolean properties with a Boolean Property Setting Method. </span></span></span></p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice" id="id8-1">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad de lectura #2</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_44_4" class="block iDevice_content">
+<p>En base al siguiente fragmento, responda: ¿en qué situación es conveniente utilizar el "Creation Parameter Method"?</p>
+<hr />
+<p></p>
+</div>
+<div id="ta8_44_5" class="block iDevice_content">
+<p><em><span style="font-weight: 400;">Fragmento del Libro: </span><b>Smalltalk Best Practice Patterns</b><span style="font-weight: 400;"> de </span><b>Kent Beck</b></em></p>
+<h2><b>Creation Parameter Method</b></h2>
+<p><span style="font-weight: 400;">A Complete Creation Method needs to pass parameters on to the new instance. You need to initialize Common State. </span></p>
+<p><b>How do you set instance variables from the parameters to a Complete Creation Method?</b></p>
+<p><span style="font-weight: 400;">Once you have the parameters of a Complete Creation Method to the class, how do you get them to the newly created instance? The most flexible and consistent method is to use Setting Methods to set all the variables. Thus, a Point would be initialized with two messages:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Point class&gt;&gt;x: xNumber y: yNumber</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">^self new x: xNumber; y: yNumber; yourself</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">The problem I have run into with this approach is that Setting Methods can become complex. I have had to add special logic to the Setting Methods to check whether they are being sent during initialization, and if so just set the variable.</span></p>
+<p><span style="font-weight: 400;">Remember the rule that says “say things once and only once”? Special casing a Setting Method for</span></p>
+<p><span style="font-weight: 400;">use during initialization is a violation of the first part of that rule. You have two circumstances -state initialization during instance creation and state change during computation- but only one method. You have two things to say and you’ve only said one thing.</span></p>
+<p><span style="font-weight: 400;">The Setting Method solution also has the drawback that if you want to see the types of all the variables, you have to look at the Type Suggesting Parameter Names in several methods. You’d like the reader to be able to look at your code and quickly understand types. Create a single method that sets all the variables. Preface its name with “set”, then the names of the variables.</span></p>
+<p><span style="font-weight: 400;">Using this pattern, the code above becomes:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Point class&gt;&gt;x: xNumber y: yNumber</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">^self new</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">setX: xNumber</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">y: yNumber</span></p>
+<p><strong><span style="font-family: courier new,courier,monospace;">Point&gt;&gt;setX: xNumber y: yNumber</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">x := xNumber.</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">y := yNumber.</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">^self</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">Note the Interesting Return Value in setX:y:. It is there because the return value of the method will be used as the return value of the caller. </span></p>
+<p><span style="font-weight: 400;"><span style="font-weight: 400;"><span style="font-weight: 400;"><span style="font-weight: 400;">If you are using Explicit Initialization, now is a good time to invoke it, to communicate that initialization is part of instance creation.</span></span></span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice" id="id9-1">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad de lectura #3</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta9_45_4" class="block iDevice_content">
+<p>En base al siguiente fragmento, responda: ¿cómo se debe proporcionar acceso a variables que referencian a una colección?</p>
+<hr />
+<p></p>
+</div>
+<div id="ta9_45_5" class="block iDevice_content">
+<p><em><span style="font-weight: 400;">Fragmento del Libro: </span><b>Smalltalk Best Practice Patterns</b><span style="font-weight: 400;"> de </span><b>Kent Beck</b></em></p>
+<h2><b>Collection Accessor Method</b></h2>
+<p><span style="font-weight: 400;">You are using Indirect Variable Access.</span></p>
+<p><strong>How do you provide access to an instance variable that holds a collection?</strong></p>
+<p><span style="font-weight: 400;">The simplest solution is just to publish a Getting Method for the variable. That way, any client that wants can add to, delete from, iterate over, or otherwise use the collection.</span></p>
+<p><span style="font-weight: 400;">The problem with this approach is that it opens up too much of the implementation of an object to the outside world. If the object decides to change the implementation, say by using a different kind of collection, the client code may well break.</span></p>
+<p><span style="font-weight: 400;">The other problem with just offering up your private collections for public viewing is that it is hard to keep related state current when someone else is changing the collection without notifying you. Here’s a department that use a Caching Instance Variable to speed access to its total salary:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Department</span></strong></p>
+<p style="padding-left: 30px;"><span style="font-weight: 400; font-family: courier new,courier,monospace;">superclass: Object</span></p>
+<p style="padding-left: 30px;"><span style="font-weight: 400; font-family: courier new,courier,monospace;">instance variables: employees totalSalary</span></p>
+<p><strong><span style="font-family: courier new,courier,monospace;">totalSalary</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">totalSalary isNil ifTrue: [totalSalary := self computeTotalSalary]. ^totalSalary</span></p>
+<p><strong><span style="font-family: courier new,courier,monospace;">computeTotalSalary </span></strong></p>
+<p><span style="font-weight: 400;"><span style="font-family: courier new,courier,monospace;">^employees inject: 0 into: [:sum :each | sum + each salary]</span> </span></p>
+<p><strong><span style="font-family: courier new,courier,monospace;">clearTotalSalary </span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">totalSalary := nil</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">What happens if client code deletes an employee without notifying the department?</span></p>
+<blockquote>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">...aDepartment employees remove: anEmployee...</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">The totalSalary cache never gets cleared. It now contains a number inconsistent with the value returned by computeTotalSalary.</span></p>
+<p><span style="font-weight: 400;">The solution to this is not to let other objects have your collections. If you use Indirect Variable Access, make sure Getting Methods for collections are private. Instead, give clients restricted access to operations on the collection through messages that you implement. This gives you a chance to do whatever other processing you need to.</span></p>
+<p><span style="font-weight: 400;">The downside of this approach is that you have to actually implement all of these methods. Giving access to a collection takes one method. You might need four or five methods to provide all the necessary protected access to the collection. In the long run, it’s worth it though, because your code will read better and be easier to change.</span></p>
+<p><b>Implement methods that are implement with Delegation to the collection. To name the methods, add the name of the collection (in singular form) to the collection messages.</b></p>
+<p><span style="font-weight: 400;">If Department wanted to let others add and delete employees, it would implement Collection Accessor Methods: </span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">addEmployee: anEmployee</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">self clearTotalSalary. employees add: anEmployee</span></p>
+<p><strong><span style="font-family: courier new,courier,monospace;">removeEmployee: anEmployee</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">self clearTotalSalary.</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">employees remove: anEmployee</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">Don’t just blindly name a Collection Accessor Method after the collection message it delegates. See if you can find a word from the domain that makes more sense. For example, I prefer:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">employs: anEmployee</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">^employees includes: anEmployee</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">to:</span></p>
+<p><span style="font-weight: 400;">Implement an Enumeration Method for safe and efficient general collection access. </span></p>
+<h2><b>Enumeration Method</b></h2>
+<p><span style="font-weight: 400;">You are using Indirect Variable Access. You may have implemented a Collection Accessor Method.</span></p>
+<p><strong>How do you provide safe general access to collection elements?</strong></p>
+<p><span style="font-weight: 400;">Sometimes clients want lots of ways of accessing a private collection. You could implement twenty or thirty Collection Accessor Methods, but you haven’t the time and you aren’t even sure even that would be enough. At the same time, all the argument for not just making a Getting Method for the collection public still hold.</span></p>
+<p><b>Implement a method that executes a Block for each element of the collection. Name the method by concatenating the name of the collection and “Do:”.</b></p>
+<p><span style="font-weight: 400;">The Enumeration Method for a Department’s Employees looks like this:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Department&gt;&gt;employeesDo: aBlock </span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">employees do: aBlock</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">Now client code that wants to get a collection of all of the Employees in a bunch of departments can use a Concatenating Stream:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">allEmployees </span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">| writer |</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">writer := WriteStream on: Array new.</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">self departments do: [:eachDepartment | each employeesDo: [:eachEmployee | writer nextPut: eachEmployee]]</span></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">^writer contents</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">What if you want Departments to be able to contain other Departments, and not just Employees (this is an example of the modeling pattern Composite)? You can implement employeesDo: for both:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Department&gt;&gt;employeesDo: aBlock</span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">employees do: [:each | each employeesDo: aBlock]</span></p>
+<p><strong><span style="font-family: courier new,courier,monospace;">Employee&gt;&gt;employeesDo: aBlock </span></strong></p>
+<p><span style="font-weight: 400;"><span style="font-family: courier new,courier,monospace;">aBlock value: self</span> </span></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice" id="id10-1">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Actividad de lectura #4</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_46_4" class="block iDevice_content">
+<p>En base al siguiente fragmento, responda: ¿por qué son necesarios dos métodos para asignar el estado a una propiedad booleana?</p>
+<hr />
+<p></p>
+</div>
+<div id="ta10_46_5" class="block iDevice_content">
+<p><em><span style="font-weight: 400;">Fragmento del Libro: </span><b>Smalltalk Best Practice Patterns</b><span style="font-weight: 400;"> de </span><b>Kent Beck</b></em></p>
+<h2><b>Boolean Property Setting Method</b></h2>
+<p><span style="font-weight: 400;">You are using a Setting Method.</span></p>
+<p><b>What protocol do you use to set a boolean property?</b></p>
+<p><span style="font-weight: 400;">The simplest solution is to use a Setting Method. Let’s say we have a Switch that stores a Boolean in an instance variable “isOn”. The Setting Method is:</span></p>
+<blockquote>
+<p><strong><span style="font-family: courier new,courier,monospace;">Switch&gt;&gt;on: aBoolean </span></strong></p>
+<p><span style="font-weight: 400; font-family: courier new,courier,monospace;">isOn := aBoolean</span></p>
+</blockquote>
+<p><span style="font-weight: 400;">There are two problems with this approach. The first is that it exposes the representation of the status of the switch to clients. This has led me to situations where I make a representation change in one object that has to be reflected in many others. The second problem is that it is hard to answer simple questions like “who turns on the switch?”</span></p>
+<p><span style="font-weight: 400;">Creating distinct methods for the two states causes you to create one more method than you would have otherwise. However, the cost of these methods is money well spent because of the improvement in communication of the resulting code.</span></p>
+<p><span style="font-weight: 400;">Using the names of the two states as the names of the methods is tempting (Switch&gt;&gt;on and Switch&gt;&gt;off, in this example). As with Query Method, though, there is a potential confusion about whether you’re interrogating the object or telling it what to do. Thus, even though adding another word to the selector results in a selector that is less natural to say, the added clarity is worth it.</span></p>
+<p><b>Create two methods beginning with “make”. One has property name, the other the negation. Add “toggle” if the client doesn’t want to know about the current state.</b></p>
+<p><span style="font-weight: 400;">Here are some examples from the image:</span></p>
+<p><span style="font-weight: 400;">makeVisible/makeInvisible/toggleVisible makeDirty/makeClean</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<div id="siteFooter">Programación Orientada a Objetos 2 - UNQ</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body>
+</html>

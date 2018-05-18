@@ -1,0 +1,28 @@
+from Persona import *
+import unittest
+
+class TestPersona(unittest.TestCase):
+    
+    def testCambiarNombre(self):
+        pablo = Persona("Martin","Mario","Maria")
+        pablo.CambiarNombre("Pablo")
+        self.assertEqual("Pablo", pablo.nombre)
+        
+    def testPadreEsNulo(self):
+        Roberto = Persona("Roberto", None, None)
+        self.assertEqual(None, Roberto.padre)
+    def testMadreEsNulo(self):
+        Martina = Persona("Martina", "Paula", "Paula")
+        self.assertEqual("Paula", Martina.madre)
+    def testLargoNombre(self):
+        Pepe = Persona("Pepe", None, None)
+        self.assertTrue(len(Pepe.nombre) == 4)
+    def testPenPepe(self):
+        Pepe = Persona("Pepe", None, None)
+        self.assertIn("e" , Pepe.nombre)
+    def testPadreNuloYMadreNoNula(self):
+        Pepe = Persona("Pepe",None,"Maria")         
+        self.assertRaises(HijoAmorfo, Pepe)
+
+suite = unittest.TestLoader().loadTestsFromTestCase(TestPersona)
+unittest.TextTestRunner(verbosity=2).run(suite)

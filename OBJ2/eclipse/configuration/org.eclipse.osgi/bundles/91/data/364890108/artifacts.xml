@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='update site: http://www.polarion.org/projects/subversive/download/update-site/' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1308169240873'/>
+    <property name='eclipse.p2.force.threading' value='true'/>
+    <property name='site.checksum' value='3458190370'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='23'>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.client.javasvn.core' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.client.javasvn.core_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.svn.core' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.svn.core_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.svn.ignores.jdt' version='1.0.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.svn.ignores.jdt_1.0.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.svn.ignores.jdt.source' version='1.0.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.svn.ignores.jdt.source_1.0.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.client.javahl.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.client.javahl.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.svn.ignores.jdt.source' version='1.0.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.svn.ignores.jdt.source_1.0.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.svn' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.svn_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.client.javahl.core.win32' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.client.javahl.core.win32_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.client.javahl.win32' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.client.javahl.win32_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.svn.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.svn.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.client.javahl.core' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.client.javahl.core_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.client.javahl' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.client.javahl_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.client.javahl.win32.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.client.javahl.win32.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.svn.ignores.jdt' version='1.0.1'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.svn.ignores.jdt_1.0.1.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.svn.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.svn.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.client.javahl.win32.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.client.javahl.win32.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.client.javasvn.standard' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.client.javasvn.standard_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.client.javasvn.standard.core' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.client.javasvn.standard.core_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.client.javasvn.standard.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.client.javasvn.standard.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.client.javasvn.standard.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.client.javasvn.standard.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.svn.ui' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.svn.ui_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.polarion.team.svn.source' version='1.0.5.Sources'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/features/org.polarion.team.svn.source_1.0.5.Sources.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.polarion.team.client.javahl.source' version='1.0.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://www.polarion.org/projects/subversive/download/update-site/plugins/org.polarion.team.client.javahl.source_1.0.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

@@ -1,0 +1,12 @@
+Ejercicio 4:
+
+northEast
+
+	direction := 45.
+	^self
+
+Ejercicio 5:
+
+robotech brushDown; southEast; move:100; southWest; move:100; northWest; move:100; northEast; move:100; brushUp.
+
+robotech refillBattery.

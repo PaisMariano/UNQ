@@ -1,0 +1,16 @@
+'''
+Created on 26/08/2010
+
+@author: Publico
+'''
+
+class Pantalla():
+    def __init__(self):
+        self.impreso = []
+        
+    def mostrado(self, texto):
+        return (texto in self.impreso)        
+    def mostrar(self, texto):
+        self.impreso.append(texto)
+        print(texto)
+        

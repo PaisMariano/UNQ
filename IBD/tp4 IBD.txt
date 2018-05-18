@@ -1,0 +1,40 @@
+SELECT razon_social, cuit
+FROM cabaña JOIN toro ON cuit = cuit_cabaña
+WHERE altura > 159 AND altura < 187
+
+SELECT nombre_cabaña, COUNT(nombre) as cant_premios
+FROM cabaña JOIN premio ON cuit = cuit_cabaña
+GROUP BY nombre_cabaña
+HAVING cant_premios > 5
+
+SELECT caravana
+FROM vaca JOIN vaca ON cavarana_madre = caravana
+WHERE precio as precio0 >= precio + 100
+
+SELECT nombre_lote, nombre_agroquimico
+FROM aplicacion_aq NATURAL JOIN componente_agro
+WHERE componente = "Fenil" OR componente = "Urea"
+
+SELECT nombre_de_lote, COUNT(caravana_vaca) as cant_vacas, COUNT(caravana_toros) as cant_toros, COUNT(periodo_novillo_parcela) as cant_novillos, semilla_actual
+FROM (lote JOIN semilla ON nombre = nombre_lote JOIN toro ON nombre = nombre_lote JOIN vaca ON nombre = nombre_lote JOIN periodo_novillo_parcela
+
+SELECT caravana
+FROM vaca JOIN vaca ON caravana_madre = caravana
+WHERE nombre_lote = "noa" and nombre_lote <> "sur"
+
+SELECT tipo, direccion
+FROM ((SELECT domicilio as direccion, "Direc_Laboratorio" as tipo
+                FROM laboratorio)
+                UNION
+                (SELECT domicilio as direccion, "Direc_Veterinario" as tipo
+                FROM veterinario)
+                UNION
+                (SELECT domicilio as direccion, "Direc_cabaña" as tipo 
+                FROM cabaña))
+GROUP BY tipo
+
+SELECT nombre, numero_parcela, COUNT(caravana-novillo) as cantidad
+FROM lote JOIN periodo_novillo_parcela ON: lote.nombre = periodo_novillo_parcela.nombre_lote
+WHERE lote.hectareas < 1000 
+GROUP BY lote.nombre, periodo_novillo_parcela.numero_parcela
+HAVING cantidad > 50

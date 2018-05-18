@@ -1,0 +1,36 @@
+class HijoAmorfo(Exception):
+    def __str__(self):
+        return "Tenes un hijo amorfo"
+
+class Persona():
+    def __init__(self, nombre, padre, madre):
+        self.nombre = nombre
+        self.padre = padre
+        self.madre = madre
+        if (self.padre == None and self.madre != None) or (self.padre != None and self.madre == None):
+            raise HijoAmorfo()     
+    def printArbol(self, corrimiento):
+        p = " "*corrimiento + self.nombre
+        print(p)
+        if self.padre != None:
+            self.padre.printArbol(corrimiento+5)
+            self.madre.printArbol(corrimiento+5)
+    def CambiarNombre(self, NombreACambiar):
+        self.nombre = NombreACambiar
+
+##AbueloP = Persona("Juan Carlos", None, None)
+##AbuelaP = Persona("Maria Ines", None, None)
+##Padre = Persona("Juan Carlos Segundo", AbueloP, AbuelaP)
+##
+##AbueloM = Persona("Jose", None, None)
+##AbuelaM = Persona("Maria Marta", None, None)
+##
+##Madre = Persona("Marta", AbueloM, AbuelaM)
+##
+##Yo = Persona("Carlitos", Padre, Madre)
+##
+##Yo.printArbol(1)
+
+
+    
+

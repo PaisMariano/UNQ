@@ -1,0 +1,121 @@
+
+
+Detalle de Hardware:
+
+PCs
+
+SRV-WEB1   : Servicio DNS primario - Servidor web de roger.com.ar              		IP: 172.15.0.5
+SRV-WEB2   : Servicio DNS secundario - Servidor web de planif.roger.com.ar      	IP: 172.15.0.15
+SRV-HTTPS1 : Servicio web seguro de admin.roger.com.ar - Firewall admin.roger.com.ar   	IP: 172.15.0.6
+SRV-HTTPS2 : Servicio web seguro de uplanif.roger.com.ar		             	IP: 172.15.0.16
+SRV-DHCP   : Servicio de DHCP - Rango de IPs 172.15.0.51 al 172.15.0.101	    	IP: 172.15.0.10
+SRV-MAIL   : Servicio de mail smtp.roger.com.ar y pop.roger.com.ar	             	IP: 172.15.0.11
+
+COM-PC01   : Puesto cliente de comercial que por simplicidad simula 10 clientes 	IP: Administrado por DHCP
+FAC-PC01   : Puesto cliente de Facturacion que por simplicidad simula 6 clientes	IP: Administrado por DHCP
+ADM-PC01   : Puesto cliente de Administracion que por simplicidad simula 5 clientes	IP: 172.15.0.21 Fija por necesidad
+PLA-PC01   : Puesto cliente de Planificacion que por simplicidad simula 10 clientes	IP: Administrado por DHCP
+SIS-PC01   : Puesto cliente de Sistemas que por simplicidad simula 5 clientes		IP: Administrado por DHCP
+RHH-PC01   : Puesto cliente de RRHH que por simplicidad simula 4 clientes		IP: Administrado por DHCP
+
+PLA-LAPTOP01 : Puesto cliente wireless de Planificacion conectado a AP-02		IP: Administrado por DHCP
+PLA-PRINTER01: Impresora wireless de Planificacion conectada a AP-02			IP: Administrado por DHCP
+
+PLA-SMART01  : Celular con conexión wireless conectado a AP-02				IP: Administrado por DHCP
+
+3 switch 2960 24TT
+
+3 Sniffer
+
+COM-PRINTER01 : Impresora Conectada a Switch1 mediante cable UTP.         		IP: Administrado por DHCP
+
+2 AccessPoint-PT AP-01, AP-02
+
+
+Descripción de servicios de capa de aplicación implementados
+
+
+Servicio DNS:
+
+roger.com.ar definido en NIC.AR :
+
+a.roger.com.ar   	A Record	   172.15.0.5
+a1.roger.com.ar		A Record	   172.15.0.4
+roger.com.ar     	NS      	   a.roger.com.ar
+roger.com.ar     	NS      	   a1.roger.com.ar
+
+
+NS Primario a.roger.com.ar:
+
+a.roger.com.ar          A Record 	   172.15.0.5
+admin.roger.com.ar	A Record	   172.15.0.6
+b.roger.com.ar		A Record	   172.15.0.15
+b2.roger.com.ar		A Record	   172.16.0.14
+mail.roger.com.ar	A Record	   172.15.0.11
+web.roger.com.ar	A Record	   172.15.0.7
+
+a.roger.com.ar		SOA                ServerName: a.roger.com.ar
+				           MailBox: sistemas.roger.com.ar
+				   	   Expiry :600
+					   Refresh:300
+					   Retry  :600
+					   MinTTL :300
+
+planif.roger.com.ar     NS		   b.roger.com.ar
+planif.roger.com.ar     NS		   b2.roger.com.ar
+roger.com.ar            NS		   a.roger.com.ar
+uplanif.roger.com.ar    NS		   b.roger.com.ar
+uplanif.roger.com.ar	NS		   b2.roger.com.ar
+
+admin.roger.com.ar      CNAME              admin.roger.com.ar
+pop.roger.com.ar        CNAME		   mail.roger.com.ar
+roger.com.ar		CNAME		   web.roger.com.ar
+smtp.roger.com.ar	CNAME		   mail.roger.com.ar
+www.roger.com.ar	CNAME		   web.roger.com.ar
+www.admin.roger.com.ar	CNAME		   admin.roger.com.ar
+
+
+NS Secundario b.roger.com.ar:
+
+b.roger.com.ar		A Record	   172.15.0.15
+uplanif.roger.com.ar	A Record	   172.15.0.16
+webplanif.roger.com.ar	A Record	   172.15.0.17
+
+b.roger.com.ar		SOA		   ServerName: b.roger.com.ar
+				           MailBox: sistemas.roger.com.ar
+				   	   Expiry :600
+					   Refresh:300
+					   Retry  :600
+					   MinTTL :300
+
+planif.roger.com.ar	NS		   b.roger.com.ar
+
+planif.roger.com.ar	CNAME		   webplanif.roger.com.ar
+uplanif.roger.com.ar	CNAME		   uplanif.roger.com.ar
+www.planif.roger.com.ar CNAME		   webplanif.roger.com.ar
+www.uplanif.roger.com.arCNAME		   uplanif.roger.com.ar
+
+Servicio HTTP / HTTPS:
+
+http://www.roger.com.ar		           172.15.0.5
+https://www.admin.roger.com.ar		   172.15.0.6
+http://www.planif.roger.com.ar		   172.15.0.15
+https://www.uplanif.roger.com.ar	   172.15.0.16
+
+Servicio DHCP:
+
+Servidor DHCP				   172.15.0.10
+
+Configuración:
+Pool name				   serverPool
+Puerta de Enlace			   172.15.0.1
+Servidor DNS				   172.15.0.2
+IP de comienzo 			    	   172.15.0.51
+Máximo número de usuarios		   50
+
+
+ping 
+nslookup
+netstat
+telnet
+ipconfig

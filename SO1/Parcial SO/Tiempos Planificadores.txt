@@ -1,0 +1,15 @@
+Planificación de la CPU
+
+Tiempo de retorno : tiempo que tarda en completar su ejecución un proceso.
+Tiempo de espera : tiempo total que pasa un proceso en la cola de listos.
+Tiempo de respuesta : tiempo transcurrido desde que se hace una solicitud hasta recibir la respuesta.
+
+FCFS : P1 = 10 P2 = 11 P3 = 13 p4 = 14 p5 = 19
+SJF : P1 = 19 P2 = 1 P3 = 4 P4 = 2 P5 = 9
+Prioridad : P1 = 16 p2: 1 P3 = 18 P4 = 19 P5 = 6
+Round Robin : P1 = 19 P2 = 2 P3 = 7 P4 = 4 P5 = 14
+
+Tiempo De espera :
+FCFS : P1 = 0 P2 = 10 P3 = 11 P4 = 13 P5 = 14 TP:9,6
+Round Robin
+P1 = 9 P2 = 1 P3 = 5 P4 = 3 P5 = 9  TP:5,4 

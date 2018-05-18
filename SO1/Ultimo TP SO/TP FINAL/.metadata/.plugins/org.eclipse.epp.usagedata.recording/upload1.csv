@@ -1,0 +1,301 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"No message gotten.",1306256764453
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256765531
+error,log,,,"No message gotten.",1306256765578
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256767875
+error,log,,,"No message gotten.",1306256769000
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256770171
+error,log,,,"No message gotten.",1306256771140
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256772515
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256773859
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256775640
+error,log,,,"No message gotten.",1306256777031
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256777078
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256777078
+error,log,,,"No message gotten.",1306256777156
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256781296
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256787625
+error,log,,,"No message gotten.",1306256788468
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256788515
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256788593
+executed,command,org.eclipse.ui.ide,3.6.2.M20101201-0800,"org.eclipse.ui.edit.text.openLocalFile",1306256788593
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256794281
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256796593
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256800734
+error,log,,,"No message gotten.",1306256802156
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAs",1306256802156
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256805171
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256805187
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256805296
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256807531
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256820656
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256820656
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256820781
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256828187
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1306256834531
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256850968
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256851828
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256852031
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256852203
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256852390
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256852609
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256852828
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256854078
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256856750
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256862109
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256862484
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256862687
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256862906
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256863203
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256863531
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256863796
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256864062
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306256867921
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256878906
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306256883265
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256883953
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1306256886625
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306256901828
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256902593
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1306256905796
+error,log,,,"No message gotten.",1306256912281
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1306256912296
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256913015
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256919671
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256934781
+error,log,,,"No message gotten.",1306256936625
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAs",1306256936625
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256942890
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256957531
+error,log,,,"No message gotten.",1306256958390
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256958421
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256958500
+executed,command,org.eclipse.ui.ide,3.6.2.M20101201-0800,"org.eclipse.ui.edit.text.openLocalFile",1306256958500
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306256963296
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256970031
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256970031
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256970140
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256971375
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306256971906
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257006484
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257008453
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257008453
+error,log,,,"No message gotten.",1306257009343
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257014093
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306257029031
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257032171
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1306257035125
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257036125
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1306257038609
+error,log,,,"No message gotten.",1306257041546
+error,log,,,"No message gotten.",1306257041656
+error,log,,,"No message gotten.",1306257041781
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAll",1306257041781
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257043578
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257043578
+error,log,,,"No message gotten.",1306257044562
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257046859
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257046859
+error,log,,,"No message gotten.",1306257047843
+activated,view,org.eclipse.ui.ide,3.6.2.M20101201-0800,"org.eclipse.ui.views.ProblemView",1306257049578
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257049578
+error,log,,,"No message gotten.",1306257050937
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257053328
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257071406
+error,log,,,"No message gotten.",1306257072281
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257072328
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257072406
+error,log,,,"No message gotten.",1306257072984
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073015
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073093
+error,log,,,"No message gotten.",1306257073171
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073218
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073296
+error,log,,,"No message gotten.",1306257073375
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073406
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073484
+error,log,,,"No message gotten.",1306257073562
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073609
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073687
+error,log,,,"No message gotten.",1306257073765
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073796
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257073875
+error,log,,,"No message gotten.",1306257073968
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074000
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074078
+error,log,,,"No message gotten.",1306257074156
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074203
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074281
+error,log,,,"No message gotten.",1306257074375
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074406
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074484
+error,log,,,"No message gotten.",1306257074562
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074593
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074671
+error,log,,,"No message gotten.",1306257074750
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074812
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257074937
+error,log,,,"No message gotten.",1306257075015
+opened,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257075046
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257075140
+executed,command,org.eclipse.ui.ide,3.6.2.M20101201-0800,"org.eclipse.ui.edit.text.openLocalFile",1306257075140
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257075140
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257180906
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257184156
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257193312
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257194062
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257194062
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257194156
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257206109
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257208593
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257210781
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257213328
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257213375
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257217640
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257217640
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257217734
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257315718
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257318421
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257318421
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257318515
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257364000
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257364109
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257365437
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257395234
+error,log,,,"No message gotten.",1306257408953
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAll",1306257408953
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257409203
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257409203
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257409312
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257413500
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.undo",1306257414234
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257447546
+error,log,,,"No message gotten.",1306257448359
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257448375
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAll",1306257448375
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257499843
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257501750
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257538406
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257544062
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306257547593
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257548484
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257548484
+error,log,,,"No message gotten.",1306257549312
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1306257552437
+error,log,,,"No message gotten.",1306257567968
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1306257567968
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306257571218
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257576281
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257576281
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257576359
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257652812
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257652937
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257653640
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257677093
+error,log,,,"No message gotten.",1306257685515
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAll",1306257685515
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257686078
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257693265
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257709859
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257713484
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257718812
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257720593
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257738843
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257738843
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257738921
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257740859
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257745375
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257747000
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257753312
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257755187
+error,log,,,"No message gotten.",1306257766078
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1306257766093
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306257771109
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257771812
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257771812
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257771890
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257849359
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257851171
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257852562
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257853109
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257854156
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257855375
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257858000
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257882437
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257884125
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257886796
+closed,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257886796
+error,log,,,"No message gotten.",1306257886859
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257888703
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257891296
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306257891343
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306257897281
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257899156
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257899156
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257899250
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257908828
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257935828
+error,log,,,"No message gotten.",1306257936375
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257936375
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAll",1306257936390
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.delete",1306257946765
+error,log,,,"No message gotten.",1306257951125
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257951125
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257951125
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.save",1306257951125
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306257960328
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306257961984
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258002937
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258004546
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258036734
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258038687
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258041406
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306258041453
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258043359
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258071656
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306258074546
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258075015
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258259875
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258263843
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258266937
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306258267000
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258268390
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258268390
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258268453
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258308093
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306258308250
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306258316140
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306258317000
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306258321078
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258321531
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258447343
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306258447484
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258449109
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258452203
+activated,editor,org.python.pydev,2.0.0.2011040403,"org.python.pydev.editor.PythonEditor",1306258452250
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258455718
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258455718
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258455796
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258461171
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306258464625
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258466812
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258519171
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.copy",1306258523500
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.edit.paste",1306258526734
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258534234
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258536109
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.print",1306258536109
+error,log,,,"No message gotten.",1306258538421
+executed,command,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.file.saveAll",1306258538437
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258538468
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258621312
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258623312
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258623328
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258623406
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258702859
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258703750
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258703750
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306258703859
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306260998765
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306261001859
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1306261039250

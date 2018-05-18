@@ -1,0 +1,19 @@
+Modulos
+
+- Ocultar código
+- Oculta implementación (caja negra)
+- Biblioteca 
+  (conjunto de funciones y tipos)
+- Abstraccion
+
+Tipos Abstractos usan modulo como mecanismo para definirse
+
+Si dos modulos o TADs tiene la misma
+interfaz puedo cambiar la implementacion
+sin tener que tocar código ya implementado como usuario (polimorfismo ad-hoc)
+
+Elijo una implementacion sobre la otra
+principalmente por temas de eficiencia
+
+Cuando elijo una implementacion sobre otra
+miro los trade-off

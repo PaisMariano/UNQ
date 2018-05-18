@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>TP UML - Objetos 2 UNQ </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Diego Cano" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">TP UML - Objetos 2 UNQ</div></div>
+<div id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Programación con Objetos 2 - TP UML</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Programación con Objetos 2 - TP UML</h1></div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Objetivos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_41_2" class="block iDevice_content">
+<p dir="ltr"><span>Especificar un modelo OO mediante un Diagrama de Clases en UML como base para una codificación posterior en un lenguaje OO.<br /></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id4">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio 1</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_41_2" class="block iDevice_content">
+<p>Se desea modelar una empresa y los empleados que ésta gestiona según las pautas que se describen a continuación.<br />La empresa tiene un nombre, un CUIT y un conjunto de empleados, cada uno de los cuales tiene la siguiente información básica:</p>
+<ul>
+<li>Nombre</li>
+<li>Dirección</li>
+<li>Estado Civil</li>
+<li>Fecha de Nacimiento</li>
+<li>Sueldo Básico</li>
+</ul>
+<p>Además, cada empleado puede calcular su edad a partir de su fecha de nacimiento.<br />Los empleados se dividen en dos clasificaciones: pueden ser de planta permanente o temporaria. Los empleados de planta permanente tienen, además de la información básica, la siguiente:</p>
+<ul>
+<li>Cantidad de Hijos</li>
+<li>Antigüedad</li>
+</ul>
+<p>Los empleados de planta temporaria tienen, además de la información básica, la siguiente:</p>
+<ul>
+<li>Fecha de fin de designación a planta temporaria</li>
+<li>Cantidad de Horas Extras</li>
+</ul>
+<p>No obstante la clasificación planteada anteriormente, es política de la empresa manejar a todos los empleados como un conjunto homogéneo sin hacer diferencias entre ambos tipos.<br />Cada empleado puede calcular su sueldo bruto, las retenciones que se le aplican y el sueldo neto resultante (que se obtiene al restar las dos primeras cantidades). La composición de del sueldo bruto y de las retenciones dependen del tipo de empleado, como se explica a continuación.<br />El sueldo bruto del empleado de planta permanente se compone de:</p>
+<ul>
+<li>Sueldo Básico</li>
+<li>Salario Familiar, que se compone de:
+<ul>
+<li>Asignación por hijo: $150 por cada hijo.</li>
+<li>Asignación por cónyuge: $100 si tiene cónyuge</li>
+</ul>
+</li>
+<li>Antigüedad: $50 por cada año de antigüedad.</li>
+</ul>
+<p>Las retenciones que se realizan a este empleado son:</p>
+<ul>
+<li>Obra Social: 10% de su sueldo bruto + $20 por cada hijo.</li>
+<li>Aportes Jubilatorios: 15% de su sueldo bruto</li>
+</ul>
+<p><br />Por otro lado, el sueldo bruto del empleado de planta temporaria se compone de:</p>
+<ul>
+<li>Sueldo Básico</li>
+<li>Horas Extras: $40 por cada hora extra</li>
+</ul>
+<p>Las retenciones que se realizan a este empleado son:</p>
+<ul>
+<li>Obra Social: 10% de su sueldo bruto + $25 si supera los 50 años</li>
+<li>Aportes Jubilatorios: 10% de su sueldo bruto + $5 por cada hora extra.</li>
+</ul>
+<p>Además, antes de realizar la liquidación de sueldos, se pide a la empresa que calcule las siguientes cantidades:</p>
+<ul>
+<li>Monto total que deberá desembolsar en concepto de pago de sueldos a sus empleados (total de sueldos netos).</li>
+<li>Monto total de sueldos brutos de sus empleados.</li>
+<li>Monto total de retenciones de sus empleados.</li>
+</ul>
+<p>Finalmente, la empresa realiza la Liquidación de Sueldos. Durante este proceso, por cada empleado se genera y guarda un Recibo de Haberes, el cual contiene la siguiente información:</p>
+<ul>
+<li>Nombre del Empleado</li>
+<li>Dirección</li>
+<li>Fecha de Emisión (del Recibo de Haberes)</li>
+<li>Sueldo Bruto</li>
+<li>Sueldo Neto</li>
+<li>Desgloce de Conceptos: esto es un renglón por cada concepto que aplique en la conformación del sueldo bruto y retenciones aplicadas, siempre informando el monto de cada ítem.</li>
+</ul>
+<p><span style="text-decoration: underline;">Se pide realizar los siguientes puntos</span>:</p>
+<p>a) Realizar un diagrama de clases UML del modelo descripto anteriormente.</p>
+<p>b) Implementar en un lenguaje OO que usted conozca el modelo del punto anterior.</p>
+<p>c) Muestre en dos scripts de código cómo instancia un escenario concreto en el cual se dispare I) el cálculo del total de sueldos neto y II) la liquidación de sueldo.</p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id2">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio 2</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_43_2" class="block iDevice_content">
+<p>En base a convenios con universidades y otras instituciones, la empresa decide incorporar un nuevo tipo de empleado, al que denomina “Contratado”.<br />Cada empleado contratado tiene la siguiente información:</p>
+<ul>
+<li>Nombre</li>
+<li>Dirección</li>
+<li>Estado Civil</li>
+<li>Fecha de Nacimiento</li>
+<li>Sueldo Básico</li>
+<li>Número de contrato</li>
+<li>Medio de Pago</li>
+</ul>
+<p>El medio de pago es simplemente una descripción de cómo debe pagársele a cada empleado contratado (p.ej: cheque o transferencia bancaria a cuenta personal).<br />La empresa mantiene su política de manejar a todos los empleados, incluidos los contratados, de forma homogénea sin hacer diferencias entre los tres tipos.<br />El sueldo bruto de este tipo de empleados es igual a su sueldo básico, pero su sueldo neto varía ya que tienen una retención constante igual a $50 en concepto de “Gastos Administrativos Contractuales”.</p>
+<p><span style="text-decoration: underline;">Se pide realizar los siguientes puntos</span>:</p>
+<p>a) Extender el diagrama UML del Ejercicio 1 para incluir esta extensión.<br />b) Extender el código del Ejercicio 1 para incluir esta extensión.<br />c) Para realizar esta extensión del modelo, ¿necesitó modificar la clase Empresa? ¿Por qué?<br />d) Dada esta extensión del modelo, actualice los scripts de código de instanciación de escenarios para incluir también ahora empleados contratados.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+  <gstructs xmlns:attr="http://www.mysql.com/grt/struct-attribute">    
+      <requires file="structs.xml"/>    
+ 
+      <gstruct attr:desc="a database query" name="db.query.Query" parent="GrtObject">      
+          <members>        
+              <member attr:desc="the SQL statement" name="sql" type="string"/>        
+              <member attr:desc="list of individual SQL statements" content-struct-name="db.query.QueryParameter" content-type="object" name="params" type="list" owned="1"/>
+              <member attr:desc="connection parameter" name="connection" struct-name="db.mgmt.Connection" type="object"/>
+              <member attr:desc="the query module name" name="moduleName" type="string"/>        
+          </members>      
+      </gstruct>    
+  
+      <gstruct attr:desc="a query parameter" name="db.query.QueryParameter" parent="GrtObject">      
+          <members>        
+              <member attr:desc="type of the parameter, can be string, int, real, master" name="paramType" type="string"/>        
+              <member attr:desc="value if the type is string" name="valueStr" type="string"/>        
+              <member attr:desc="value if the type is int" name="valueInt" type="int"/>        
+              <member attr:desc="value if the type is real" name="valueReal" type="real"/>        
+              <member attr:desc="reference to the master query to use" name="masterQuery" struct-name="db.query.Query" type="object"/>        
+              <member attr:desc="name of the column in the master query to use" name="masterColumnName" type="string"/>        
+          </members>      
+      </gstruct>    
+
+      <gstruct attr:desc="a database connection object for running queries" name="db.query.ResultsetSource" parent="GrtObject">      
+            <member attr:desc="the database type name" name="dbType" type="string"/>      
+      </gstruct>    
+
+      <gstruct attr:desc="a database resultset" name="db.query.Resultset" parent="GrtObject">      
+          <members>        
+              <member attr:desc="connection parameter" name="connection" struct-name="db.mgmt.Connection" type="object"/>        
+              <member attr:desc="the query that has generated this result set" name="query" struct-name="db.query.Query" type="object"/>        
+              <member attr:desc="the SQL statement with parameters set" name="sql" type="string"/>        
+              <member attr:desc="the columns of the resultset" content-struct-name="db.query.ResultsetColumn" content-type="object" name="columns" type="list" owned="1"/>
+              <member attr:desc="number of rows in a row block" name="rowBlockSize" type="int"/>
+              <member attr:desc="for row block fetching, set to -1 when all blocks have been fetched" name="nextBlockStartRow" type="int"/>           
+          </members>
+      </gstruct>    
+  
+      <gstruct attr:desc="a database resultset column" name="db.query.ResultsetColumn" parent="GrtObject">      
+          <members>        
+              <member attr:desc="the length of the column" name="length" type="string"/>        
+              <member attr:desc="the display length of the column if available, otherwise 0" name="displayLength" type="int"/>        
+              <member attr:desc="the scale of the column if appropriate" name="displayDecimals" type="int"/>        
+              <member attr:desc="set to 1 if the column is part of the primary key" name="isPrimaryKey" type="int"/>        
+              <member attr:desc="the type of the column, string, int, real, blob, date, time, datetime, geo" name="columnType" type="string"/>        
+          </members>      
+      </gstruct>    
+    
+  </gstructs>

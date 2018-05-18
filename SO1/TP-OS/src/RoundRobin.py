@@ -1,0 +1,24 @@
+from multiprosessing import Queue
+'''
+Created on 21/05/2011
+
+@author: Mariano
+'''
+
+class RoundRobin(PCP):
+    
+    
+
+    def __init__(self, quantum):
+        self.politica="Round Robin"
+        self.ready=Queue()
+        self.quantum=quantum
+
+    def hayAlgo(self):
+        return not ready.empty()
+        
+    def darSiguiente(self):
+        return ready.get()
+
+    def agregarProceso(self, p):
+        ready.put(p)

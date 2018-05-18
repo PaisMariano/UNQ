@@ -1,0 +1,41 @@
+jugada := Jugada new.
+
+linea1 := Linea new.
+linea2 := Linea new.
+linea3 := Linea new.
+linea4 := Linea new.
+linea5 := Linea new.
+
+jugada coleccionIndexada add: linea1.
+jugada coleccionIndexada add: linea2.
+jugada coleccionIndexada add: linea3.
+jugada coleccionIndexada add: linea4.
+jugada coleccionIndexada add: linea5.
+
+zombieComun1 := ZombieComun new.
+zombieComun2 := ZombieComun new.
+zombieComun3 := ZombieComun new.
+zombieOgro1 := ZombieOgro new.
+zombieOgro2 := ZombieOgro new.
+zombieCorredor1 := ZombieCorredor new.
+zombieCorredor2 := ZombieCorredor new.
+
+linea1 poner: zombieComun1 en: 20.
+linea2 poner: zombieComun2 en: 20.
+linea3 poner: zombieComun3 en: 20.
+linea4 poner: zombieOgro1 en: 20.
+linea5 poner: zombieOgro2 en: 20.
+linea2 poner: zombieCorredor1 en: 19.
+linea1 poner: zombieCorredor2 en: 19.
+
+belsprout1 := Belsprouth new.
+belsprout2 := Belsprouth new.
+belsprout3 := Belsprouth new.
+belsprout4 := Belsprouth new.
+belsprout5 := Belsprouth new.
+
+linea1 poner: belsprout1 en:1.
+linea2 poner: belsprout2 en:1.
+linea3 poner: belsprout3 en:1.
+linea4 poner: belsprout4 en:1.
+linea5 poner: belsprout5 en:1.

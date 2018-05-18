@@ -1,0 +1,40 @@
+Código de ejemplo: Relaciones entre clases
+------------------------------------------
+
+UNQ - Técnicas Avanzadas de Programación - 2010 semestre 1
+
+Este es un ejemplo de las siguientes relaciones entre clases vistas en la teoría:
+
+** Sugerencia: Con inspect-it (Ctrl + Q) se puede ver fácilmente si se estableció 
+bien la relación (sobre todo con las recursivas).
+
+*. Relación unidireccional:
+
+|p a|
+a := Area newNombre: 'Mantenimiento'.
+p := Persona newNombre: 'Jose' edad: 40 area: a.
+
+*. Relación bidireccional:
+
+|pv det|
+pv := ProductoVendido newDescripcion: ''.
+det := DetalleFactura newPrecio: 100 orden: 547 producto: pv.
+
+*. Relación recursiva unidireccional:
+
+|e1 e2|
+e1 := Empleado newNombre: 'jefe de Carlos' antig: 10 sector: 'A' jefe: nil.
+e2 := Empleado newNombre: 'Carlos' antig: 5 sector: 'A' jefe: e1.
+
+*. Relación recursiva bidireccional: 
+
+|elem1 elem2 elem3|
+elem1 := ElementoLista newDetalle: 'Soy el primero' anterior: nil siguiente: nil.
+elem2 := ElementoLista newDetalle: 'Soy el segundo' anterior: elem1 siguiente: nil.
+elem3 := ElementoLista newDetalle: 'Soy el tercero' anterior: elem2 siguiente: nil.
+
+
+En las relaciones recursivas es común terminarlas con nil (como puede verse en 
+Empleado y en ElementoLista), así que se debe prestar atención a estos casos, para
+manejarlos correctamente. Por ejemplo, en ElementoLista no siempre hay un anterior, 
+por lo que se debe testear por nil antes de enviarle mensajes.

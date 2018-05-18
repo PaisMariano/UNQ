@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Adapter </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Catedra Objetos 2 - UNQ - Torres - Cano - Rosenfeld" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.2 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Adapter</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Adapter</h1></header>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicios</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_41_2" class="block iDevice_content">
+<h1 lang="es-ES" align="justify"><span color="#548dd4"><span face="Arial, sans-serif"><span size="3">Ejercicio 1 – Contestar y justificar las respuestas<br /></span></span></span></h1>
+<p> </p>
+<ol>
+<li>Existe más de un tipo de adaptadores, mencione y explique cada uno de ellos.</li>
+<li>¿En qué se diferencia un tipo de adaptador del otro?</li>
+<li>¿Se pueden utilizar ambas alternativas de implementación del patrón en java? ¿Justifique la respuesta?</li>
+</ol>
+<p></p>
+<h1><span color="#548dd4"><span face="Arial, sans-serif"><span size="3">Ejercicio 2 – Palabras Ordenadas<br /></span></span></span></h1>
+<p>Se desea visualizar una lista de palabras ordenadas alfabéticamente, para realizar esta tarea ya se dispone de dos clases. La clase Ventana es la encargada de visualizar la lista de palabras, sin orden alfabético, por otro lado se dispone de la clase ListaDePalabrasOrdenadas, esta mantiene una lista de palabras ordenadas alfabéticamente y tiene el comportamiento para agregar nuevas palabras.</p>
+<p>El objetivo es que Ventana pueda recibir una “instancia adaptada” de ListaDePalabrasOrdenadas.</p>
+<p> </p>
+<p class="p1"><span class="s1">import</span> java.awt.Rectangle;</p>
+<p class="p2"></p>
+<p class="p1"><span class="s1">import</span> javax.swing.BoxLayout;</p>
+<p class="p1"><span class="s1">import</span> javax.swing.DefaultListModel;</p>
+<p class="p1"><span class="s1">import</span> javax.swing.JFrame;</p>
+<p class="p1"><span class="s1">import</span> javax.swing.JLabel;</p>
+<p class="p1"><span class="s1">import</span> javax.swing.JList;</p>
+<p class="p2"></p>
+<p class="p1"><span class="s1">public</span> <span class="s1">class</span> <span class="s2">Ventana</span> <span class="s1">extends</span> JFrame{</p>
+<p class="p2"></p>
+<p class="p2"><span class="Apple-tab-span"> </span></p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">    </span><span class="s1">public</span> Ventana(<span class="s2">DefaultListModel</span> <span class="s3">listModel</span>){</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s1">this</span>.setLayout(<span class="s1">new</span><span class="Apple-converted-space">  </span>BoxLayout(<span class="s1">this</span>.getContentPane(),BoxLayout.<span class="s4">Y_AXIS</span>));</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s1">this</span>.setBounds(<span class="s1">new</span> Rectangle(180,180));</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s1">this</span>.setVisible(<span class="s1">true</span>);</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span>JLabel <span class="s3">label</span>=<span class="s1">new</span> JLabel(<span class="s5">"Lista de palabras"</span>);</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s3">label</span>.setBounds(<span class="s1">new</span> Rectangle(40,40));</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s1">this</span>.add(<span class="s3">label</span>);</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s6">listModel</span><span class="s2">.addElement(</span><span class="s7">"casa"</span><span class="s2">)</span>;</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s6">listModel</span><span class="s2">.addElement(</span><span class="s7">"arbol"</span><span class="s2">)</span>;</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s6">listModel</span><span class="s2">.addElement(</span><span class="s7">"perro"</span><span class="s2">)</span>;</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s6">listModel</span><span class="s2">.addElement(</span><span class="s7">"telefono"</span><span class="s2">)</span>;</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s6">listModel</span><span class="s2">.addElement(</span><span class="s7">"brazo"</span><span class="s2">)</span>;</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s2">JList</span> <span class="s3">lista</span>=<span class="s8">new</span><span class="s2"> JList(</span><span class="s6">listModel</span><span class="s2">)</span>;</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s3">lista</span>.setBounds(<span class="s1">new</span> Rectangle(110,160));</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">         </span><span class="s1">this</span>.add(<span class="s3">lista</span>);</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"></p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p2"></p>
+<p class="p1"><span class="s1">public</span> <span class="s1">static</span> <span class="s1">void</span> main(String[] <span class="s3">args</span>) {</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">          </span><span class="s1">new</span> Ventana(<span class="s1">new</span> <span class="s2">DefaultListModel</span>());</p>
+<p class="p2"></p>
+<p class="p3">/*<span class="s2">esta</span> <span class="s2">línea</span> <span class="s2">puede</span> <span class="s2">modificarse</span> <span class="s2">luego</span> <span class="s2">de</span> resolver el <span class="s2">ejercicio</span>.*/</p>
+<p class="p2"></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"></p>
+<p class="p1">}</p>
+<p><b>public class</b> ListaDePalabrasOrdenadas {</p>
+<p>       <b>private</b> List&lt;String&gt;palabras;</p>
+<p>       <b>private final</b> Comparator comparador;</p>
+<p>      </p>
+<p>       <b>public</b> ListaDePalabrasOrdenadas(){</p>
+<p>             <b>this</b>.palabras=<b>new</b> LinkedList&lt;String&gt;();</p>
+<p>             <b>this</b>.comparador=newComparator(){</p>
+<p> </p>
+<p>                    @Override</p>
+<p>                    <b>public int</b> compare(Object palabraA, Object palabraB) {</p>
+<p>                           String a=((String)palabraA);</p>
+<p>                           String b=(((String)palabraB));</p>
+<p>                           <b>return</b> a.compareToIgnoreCase(b);</p>
+<p>                    }</p>
+<p>             };</p>
+<p>       }</p>
+<p>       <b>public void</b> agregarPalabra(String palabra){</p>
+<p>             <b>this</b>.palabras.add(palabra);</p>
+<p>             Collections.sort(<b>this</b>.palabras, <b>this</b>.comparador);</p>
+<p>       }</p>
+<p>       <b>public</b> Integer cantidadDePalabras(){</p>
+<p>             <b>return</b> this.palabras.size();</p>
+<p>       }</p>
+<p>       <b>public</b> String getPalabraDePosicion(<b>int</b> posicion){</p>
+<p>             <b>return</b> this.palabras.get(posicion);</p>
+<p>       }</p>
+<p>}</p>
+<p> </p>
+<p>Actividad:</p>
+<ol>
+<li>Analizar el código de ambas clases.</li>
+<li>Proponer una solución en java.</li>
+</ol>
+<h1></h1>
+<h1><span color="#548dd4"><span face="Arial, sans-serif"><span size="3">Ejercicio 3 – Fechas</span></span></span></h1>
+<p>Los alumnos de la universidad  programaron el sistema que permite detectar los vencimientos de las materias. El sistema basa sus fechas en una clase llamada FechaAlumnos que implementa la siguiente interfaz:</p>
+<p> </p>
+<p><b>package</b> fechas;</p>
+<p><b>public</b> <b>interface</b> IFecha {</p>
+<p>       <b>public</b> IFecha restarDias(<b>int</b> dias);</p>
+<p>       <b>public</b> <b>boolean</b> antesDeAhora();</p>
+<p>       <b>public</b> <b>boolean</b> antesDe(IFecha fecha);</p>
+<p>       <b>public</b> <b>boolean</b> despuesDeAhora();</p>
+<p>       <b>public</b> <b>boolean</b> despuesDeFecha(IFecha fecha);</p>
+<p>       <b>public</b> <b>int</b> dia();</p>
+<p>       <b>public</b> <b>int</b> mes();</p>
+<p>       <b>public</b> <b>int</b> anio();</p>
+<p>}</p>
+<p>Lamentablemente, luego de mucho tiempo se dieron cuenta que existe la clase DateTime del proyecto joda-time que implementa un comportamiento similar y muy bien realizado, a diferencia de la implementación que hicieron los alumnos anteriormente y tenía algún error.</p>
+<p>Realice un adaptador para que el sistema de vencimientos de materia pueda utilizar la clase DateTime del proyecto joda-time en cualquier lugar donde se utiliza un IFecha.</p>
+<p>Puede descargar las librerías necesarias para utilizar las clases del proyecto joda-time desde: <a href="http://www.joda.org/joda-time/">http://www.joda.org/joda-time/</a></p>
+<p></p>
+<h3>Ejercicio 4 - Colecciones</h3>
+<ul>
+<li>
+<h3>Ver la interface Enumeration de java y la clase Vector, preste atención a que dicha clase contiene un método "elements()". Explique cómo funciona el patrón adapter y cuáles son los roles de los participantes entre la interface y clase mencionada. Mencione qué tipo de implementación del patrón se utiliza.</h3>
+</li>
+<li>
+<h3>Realice el mismo análisis del punto 1.3, pero con la interface Iterator, la clase ArrayList (preste atención al método "iterator()"). Muestre un ejemplo de funcionamiento y especifique los roles de cada participante.</h3>
+</li>
+<li>
+<h3>Implemente un Adaptador, que adapte un Iterator a un Enumeration. Escribir código que utilice dicha implementación adaptando un ArrayList.</h3>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

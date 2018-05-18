@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1510607766 source:c:\unq\ed\c++\arbolbinario\arbol\arbol.cpp
+	<iostream>
+	"arbol.h"
+
+1510608156 c:\unq\ed\c++\arbolbinario\arbol\arbol.h
+	<iostream>
+	"Queue.h"
+
+1510608128 c:\unq\ed\c++\arbolbinario\arbol\queue.h
+	"Tree.h"
+	<iostream>
+
+1510607635 source:c:\unq\ed\c++\arbolbinario\arbol\main.cpp
+	<iostream>
+	"Queue.h"
+
+1510607710 c:\unq\ed\c++\arbolbinario\arbol\tree.h
+	<iostream>
+
+1510607705 source:c:\unq\ed\c++\arbolbinario\arbol\tree.cpp
+	"Tree.h"
+

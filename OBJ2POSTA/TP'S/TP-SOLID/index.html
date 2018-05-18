@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Trabajo Práctico 6 – Diseño aplicando buenas prácticas </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.2 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Précédent",next:"Suivant",show:"Montrer",hide:"Cacher",showFeedback:"Montrer l'écho en retour",hideFeedback:"Cacher l'écho en retour",correct:"Correct",incorrect:"Incorrect",menu:"Menu",print:"Imprimer"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Ignorer la navigation</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Trabajo Práctico 6 – Diseño aplicando buenas prácticas</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Trabajo Práctico 6 – Diseño aplicando buenas prácticas</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Objetivos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_41_2" class="block iDevice_content">
+<p>Realizar el proceso completo de diseño prestando atención en los principios SOLID. Esta práctica incluye ejercicios de tipo parcial.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Conocimiento previo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_42_2" class="block iDevice_content">
+<p>En este trabajo utiliza como referencia los documentos que describen los principios SOLID. Puede consultar los mismos accediendo al recurso <a href="http://campus.unq.edu.ar/file.php/1383/PapersSolid.zip">Papers SOLID</a> (disponible en el curso desde el campus de la Universidad).</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Cliente de e-mail</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_47_2" class="block iDevice_content">
+<p>Consulte las clases del material adicional <a href="caso1.zip">clienteEMail.zip</a> y resuelva los siguientes puntos:</p>
+<ol>
+<li>Diagrama de Clases en UML.</li>
+<li>Detecte las violaciones a los principios SOLID</li>
+<li>Indique las soluciones que deben llevarse a cabo</li>
+<li>Implemente las soluciones mediante:
+<ol>
+<li>diagrama de clases</li>
+<li>código Java</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Banco y Prestamos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_48_2" class="block iDevice_content">
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Un banco tiene un conjunto de clientes, de los cuales se conocen su nombre, apellido, dirección, edad, sueldo neto mensual y, a partir de este último, su sueldo neto anual. El banco tiene registrados a todos sus clientes y puede agregar nuevos.</span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR"> Un cliente puede solicitar al banco que le otorgue un crédito por una determinada suma de dinero, la cual devolverá posteriormente a la entidad mediante cuotas mensuales en un determinado plazo de tiempo.</span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR"> El banco no otorga un crédito de forma inmediata, sino que primero registra una Solicitud de Crédito realizada por el cliente y, posteriormente, la evalúa para determinar si la misma es aceptada o rechazada. En caso de ser aceptada, el banco desembolsará y otorgará al cliente el monto en efectivo que ha solicitado. </span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Existen dos tipos de solicitudes de crédito: una para créditos personales y otra para créditos hipotecarios. Tanto los datos a registrar como la evaluación de una solicitud dependen del tipo que se trate. No obstante esto, es muy importante recalcar que el banco mantiene a todas las solicitudes juntas, sin discriminar por su tipo.</span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR"> A continuación se describen los detalles a considerar para ambos tipos de solicitudes, tanto en el momento de agregar una nueva solicitud como en el momento de evaluarla.</span></p>
+<h4 style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Solicitudes de crédito (en general)</span></h4>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Al agregar una nueva solicitud de crédito al banco, se indica cuál es el cliente que la solicita, el monto solicitado y el plazo en meses. Dada una solicitud, se obtiene el monto de la cuota mensual dividiendo el monto solicitado por la cantidad de cuotas (considerando que se abona una cuota por mes).</span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">A todas las solicitudes de crédito se les puede realizar el chequeo sobre si son aceptables o no, lo cual depende del tipo de solicitud que se trate, como se explica a continuación.</span></p>
+<h4 style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Solicitudes de crédito personal</span></h4>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Las solicitudes para los créditos personales requieren que el solicitante tenga ingresos anuales por al menos $15000, y que el monto de la cuota no supere el 70% de sus ingresos mensuales. </span></p>
+<h4 style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Solicitudes de crédito hipotecario</span></h4>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Al agregar una nueva solicitud de crédito hipotecario al banco se indica, además de lo mencionado en los términos generales, cuál será la propiedad inmobiliaria que el cliente pone como garantía. De cada propiedad se tiene una breve descripción, dirección y valor fiscal. </span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Para ser aceptadas, las solicitudes de créditos hipotecarios requieren que el monto de la cuota no supere el 50% de los ingresos mensuales del titular, que el monto total solicitado no sea mayor al 70% del valor fiscal de la garantía, y que la persona no supere los 65 años de edad antes de terminar de pagar el crédito. </span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR"></span></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Realice los mismos puntos solicitados para el ejercicio anterior.</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id8">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Sistema Informático bancario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_49_2" class="block iDevice_content">
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Desde la gerencia se pide implementar un sistema informático para dar soporte a la gestión descripta previamente de forma tal que permita al banco, entre otras cosas:</span></p>
+<ul>
+<li style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Agregar nuevos clientes al banco</span></li>
+<li style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Agregar nuevas solicitudes de crédito al banco</span></li>
+<li style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Calcular el monto total de dinero a desembolsar por el banco, lo cual se obtiene como la sumatoria del monto solicitado de todas las solicitudes de crédito registradas que sean aceptables.</span></li>
+</ul>
+<p style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Se deben realizar los siguientes puntos:</span></p>
+<ol>
+<li style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Diagrama de Clases en UML del modelo propuesto como solución. </span><span lang="es-AR">Para la realización de este modelo considere qué clases forman parte del mismo, qué atributos y operaciones poseen, qué relaciones de conocimiento tienen entre sí y cómo se distribuyen las responsabilidades entre ellos para llevar a cabo los objetivos. </span></li>
+<li style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">Justifique por qué su modelo no viola los principios SOLID e marque cuáles desiciones tomó para que asi sea.</span></li>
+<li style="margin-bottom: 0cm; line-height: 100%;"><span lang="es-AR">A partir del diseño del punto anterior realice la implementación en Java, aplicando TDD.</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Régi par la licence</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons: Licence d'attribution en partage identique 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

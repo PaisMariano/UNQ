@@ -1,0 +1,13 @@
+'''
+Created on 26/08/2010
+
+@author: Publico
+'''
+
+class Instruccion(object):   
+        '''
+        Esto es una instruccion abstracta
+        '''
+    def run(self):
+        pass
+        

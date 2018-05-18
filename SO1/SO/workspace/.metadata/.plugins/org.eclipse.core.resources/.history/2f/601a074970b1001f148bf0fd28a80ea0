@@ -1,0 +1,15 @@
+'''
+Created on 26/08/2010
+
+@author: Publico
+'''
+
+from Instruccion import *
+
+class Imprimir(Instruccion):
+    def __init__(self, ):
+    def run(self):
+        
+    
+        
+        

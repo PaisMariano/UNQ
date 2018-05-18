@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1510605918 source:c:\unq\ed\c++\tp\codigo\pepe\array_list.cpp
+	"gentree.h"
+	"array_list.h"
+
+1510605790 c:\unq\ed\c++\tp\codigo\pepe\gentree.h
+	<iostream>
+
+1510403952 c:\unq\ed\c++\tp\codigo\pepe\array_list.h
+	<iostream>
+
+1511568396 source:c:\unq\ed\c++\tp\codigo\pepe\gentree.cpp
+	"gentree.h"
+	"array_list.h"
+
+1510403952 source:c:\unq\ed\c++\tp\codigo\pepe\linked_list.cpp
+	"linked_list.h"
+
+1510403952 c:\unq\ed\c++\tp\codigo\pepe\linked_list.h
+	<iostream>
+
+1511817625 source:c:\unq\ed\c++\tp\codigo\pepe\test_tree.cpp
+	"test_tree.h"
+	<string.h>
+
+1511555109 c:\unq\ed\c++\tp\codigo\pepe\test_tree.h
+	"gentree.h"
+	"array_list.h"
+	"linked_list.h"
+	<iostream>
+
