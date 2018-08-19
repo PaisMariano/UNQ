@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Trabajo Práctico 4 – Clases Abstractas vs. Interfaces </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="Diego Cano, Gabriel Maljkovich" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.2 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header"  style="background-image: url(logo_unqui.png); background-repeat: no-repeat;"><div id="headerContent">Trabajo Práctico 4 – Clases Abstractas vs. Interfaces</div></div>
+<div id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Trabajo Práctico State y Strategy</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Trabajo Práctico State y Strategy</h1></div>
+<div class="iDevice_wrapper objectivesIdevice em_iDevice" id="id2">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Objetivos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_41_2" class="block iDevice_content">
+<p><span color="#4f81bd"><span face="Arial, sans-serif"><span size="3">Comprender los patrones de diseño Composite y Strategy. Discutir alternativas de diseño e implementación.<br /></span></span></span></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" lang="es-ES" align="justify"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id3">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Encriptación</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_42_2" class="block iDevice_content">
+<p>Debe implementar la clase EncriptadorNaive, que se encarga de transformar cadenas de texto para que puedan ser enviadas por una red de computadoras en forma segura. La misma posee una única forma de encriptar que consiste en cambiar el orden de las palabras. Luego, debe agregar nuevas formas de encriptar y desencriptar, por ejemplo:</p>
+<ol>
+<li>Modificando cada aparición de una vocal en el texto por la vocal siguiente en el orden tradicional, esto es: si aparece una a, la cambia por una e, si aparece una e la cambia por una i y así siguiendo.  Para las consonantes, números y cualquier otro carácter no realiza ningún cambio.</li>
+<li>Escribiendo cada letra por un numero que la representa. Las letras del abecedario están numeradas la ‘a’ con el 1, la ‘b’ con el 2 y así siguiendo. El espacio esta representado por el numero 0 y los números están separados por comas. Por ejemplo la palabra “Diego” se representa por la cadena “4,9,5,7,15”. No se distinguen mayúsculas, ni minúsculas. Asuma que no hay acentos ni otros caracteres diferentes a las letras y los espacios.</li>
+</ol>
+<p>Por su parte, el método desencriptar realiza la inversa de cada uno. Recibe un String como parámetro y retorna otro String donde realizo la desencriptacion.</p>
+<ul>
+<li>public String encriptar(String texto)</li>
+<li>public String desencriptar(String texto)</li>
+</ul>
+<p>Sobre este enunciado:</p>
+<ol>
+<li>Realice un diagrama de clases UML de la solución propuesta</li>
+<li><span color="#548dd4"><span face="Arial, sans-serif"><span size="3">Realice los test de unidad necesarios para la clase EncriptadorNaive y sus método encriptar y desencriptar, para que pueda ser utilizada para encriptar y desencriptar cadenas de texto utilizando las diferentes formas de encriptación.</span></span></span></li>
+<li><span color="#548dd4"><span face="Arial, sans-serif"><span size="3">Implemente en Java.</span></span></span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id7">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Cultivos</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_44_2" class="block iDevice_content">
+<p>Diseñe una solución para el siguiente problema. Se debe modelar un sistema que controla el uso que se le da a porciones productivas de tierra. Las porciones pueden ser puras de un cultivo o mixtas, estas ultimas se dividen en cuatro regiones iguales. En cada región se pueden plantar solamente soja, trigo o subdividir la porción en cuatro siguiendo las mismas reglas anteriores. La figura muestra un ejemplo de esto. A partir del cultivo, el sistema debe determinar las ganancias anuales de cada tipo de cultivo para una región. La región cultivada con soja da una ganancia anual de $500, la de trigo $300. En caso que la región este subdividida, la ganancia será́ proporcional a la cantidad de sub parcelas que posean ese cultivo. El sistema debe responder a la ganancia anual que dará́ la parcela tanto para soja como para trigo.</p>
+<p><img src="sdasds.jpg" alt="" width="393" height="364" /></p>
+<ol>
+<li>Implemente en Java</li>
+<li>Describa las alternativas que puede utilizar para calcular la ganancia anual. Relacione las alternativas.</li>
+<li>Explique la discusión sobre quiénes deben implementar las operaciones de agregado y borrado de hijos.</li>
+<li>Sobre su implementación, indique los roles que desempeñan cada una de las clases diseñadas en relación al patrón Composite.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper activityIdevice em_iDevice" id="id8">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">ShapeShifter</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_41_2" class="block iDevice_content">
+<p>ShapeShifter es un nuevo tipo objetos que posee una estructura del tipo arbórea. Estos objetos deben poder componerse, detectar la mayor profundidad y “achatarse”. En esta primera etapa es necesario que simplemente trabajen con Integer. Como la idea es un tanto difusa, se provee una interfaz java y una serie de descripciones con ejemplos de cada una de las funcionalidades necesarias.</p>
+<blockquote>
+<p><span style="font-family: courier new,courier,monospace;">public interface <strong>IShapeShifte</strong>{        </span><br /><span style="font-family: courier new,courier,monospace;">     public IShapeShifter <strong>compose</strong>(IShapeShifter);        </span><br /><span style="font-family: courier new,courier,monospace;">     public int <strong>deepest</strong>();        </span><br /><span style="font-family: courier new,courier,monospace;">     public IShapeShifter <strong>flat</strong>();        </span><br /><span style="font-family: courier new,courier,monospace;">     public List&lt;Integer&gt; <strong>values</strong>();        </span><br /><span style="font-family: courier new,courier,monospace;">}        </span></p>
+</blockquote>
+<p>Se espera que la clase que implemente la interfaz cumpla con:</p>
+<ul>
+<li>public IShapeShifter <strong>compose</strong>(IShapeShifter);
+<ul>
+<li>recibe un IShapeShifter y retorna un nuevo IShapeShifter que es el resultado de componer al receptor con el que es enviado como parámetro.</li>
+<li>La composición se realiza al mismo nivel de profundidad.</li>
+<li>En la <strong>Figura 1</strong> se muestran esquemas de IShapeShifter, cada letra sibolizaria un nombre de variable. Entonces las siguientes expresiones deberían ser verdaderas:
+<ul>
+<li>a.compose(b) es igual a c</li>
+<li>d.compose(c) es igual a d</li>
+<li>d.compose(e) es igual a f</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>public int <strong>deepest</strong>(IShapeShifter)
+<ul>
+<li>Retorna un numero que representa la profundidad máxima alcanzada en composiciones que contiene.</li>
+<li>Continuando con las figuras de ejemplo, las siguienes expresiones deben ser validas:
+<ul>
+<li>a.deepest() es igual a 0.</li>
+<li>c.deepest() es igual a 1.</li>
+<li>f.deepest() es igual a 3.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>public IShapeShifter <strong>flat</strong>() Achata un IShapeShifter.
+<ul>
+<li>Si el IShapeShifter posee una prfundidad maxima &gt;= 1, entonces retorna un IShapeShifter de profundidad maxima 1 con todos los IShapeShifter de profundidad 0 contenidos. En cualquier otro caso, retorna el mismo IShapeShifter.</li>
+<li>Siguiendo los siguientes ejemplos:
+<ul>
+<li>a.flat() es igual a a.</li>
+<li>f.flat() es igual a g.</li>
+</ul>
+</li>
+<li>Importante: No es necesario establecer un orden particular de los IShapeShifter en los resultantes.</li>
+</ul>
+</li>
+<li>public List&lt;Integer&gt; <strong>values</strong>()
+<ul>
+<li>Retorna una lista de enteros con los valores incluidos en el IShapeShifter.</li>
+<li>Siguiendo el ejemplo:
+<ul>
+<li>a.values retorna una lista con el entero 1.</li>
+<li>d.values retorna una lista con los enteros 3,1 y 2.</li>
+</ul>
+</li>
+<li style="text-align: left;">Importante: No es necesario establecer un orden particular de los enteros en la lista.</li>
+</ul>
+</li>
+</ul>
+<p></p>
+<p style="text-align: center;"><img src="sdasdsasad.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="312" height="290" /><strong>Figura 1</strong>. Ejemplos</p>
+<p><strong>Ejercicios</strong>:</p>
+<p style="padding-left: 30px;">1. Realizar un diagrama de clases UML donde muestre un diseño orientado a objetos que resuelva el problema aplicando el patrón Composite.</p>
+<p style="padding-left: 30px;">2. Indicar en el diseño cuales son los roles del patrón.</p>
+<p style="padding-left: 30px;">3. Implementar en java todo lo necesario para resolver la funcionalidad de la interface con clases que la implementen</p>
+<p style="padding-left: 30px;">4. Escribir un método en el cual muestre como se instancia el ejemplo a y c.</p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>

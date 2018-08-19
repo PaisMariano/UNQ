@@ -1,0 +1,2 @@
+xdotool click -repeat 20000 --delay 20000 1
+

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Inicio - Observer y Abstract Factory </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li id="active"><a href="index.html" class="active no-ch main-node">Inicio - Observer y Abstract Factory</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Inicio - Observer y Abstract Factory</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Objetivos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_41_2" class="block iDevice_content">
+<p>Se ejercitarán problemas donde se aplicará el patrón de diseño Observer en diferentes alternativas y sobre el Abstract Factory.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_42_2" class="block iDevice_content">
+<h1><span>Ejercicio 0 – Diferentes alternativas de Observer<br /></span></h1>
+<p>En el archivo del material adicional de este trabajo practico se encuentran tres formas diferentes de implementar el patrón Observer en Java. Las implementaciones están simplificadas, pero muestran diferentes niveles de realizar las notificaciones y de ser notificados. En este ejercicio debe analizar las alternativas e indicar ventajas y desventajas de cada una. Si cree conveniente plantear alternativas intermedias entre solución y solución describalas.</p>
+<p>Discuta con el ayudante las diferentes alternativas encontradas, las ventajas y desventajas.</p>
+<p><span><span><span>¿Cómo extendería las soluciones para los casos en que la misma clase observadora se encuentre observando simultáneamente a más de un sensor?</span></span></span></p>
+<h1><span><span><span>Ejercicio 1 – Publicaciones<br /></span></span></span></h1>
+<p>Los miembros de un laboratorio están sumamente interesados en recibir las últimas actualizaciones de los artículos relacionados con sus temas de investigación. Es por ello que cuentan con un sistema de referencias y publicaciones bibliográficas. En este sistema es posible cargar artículos científicos indicando el titulo, los autores, las filiaciones de cada uno (Universidad, Laboratorio de Investigación, etc), el tipo de artículo, el lugar donde fue publicado y las palabras claves. Por otro lado, además de poder cargar artículos, los investigadores quieren poder suscribirse para recibir artículos de acuerdo a los criterios precedentes. Es decir, si un investigador desea recibir notificaciones para cada nueva publicación de la conferencia “Smalltalks” se registra al sistema y cada vez que se ingresa una nueva publicación de esa conferencia recibe un mensaje de aviso.<br />Las suscripciones pueden combinar cualquiera de los campos que se incluyen en la carga.</p>
+<ol>
+<li>
+<p>Modele el problema utilizando diagrama de clases UML.</p>
+</li>
+<li>
+<p>Indique cual o cuales patrones de diseño utilizó indicando los roles.</p>
+</li>
+<li>
+<p>Implemente los test necesarios relacionados con la funcionalidad de agregar un artículos  y verificar las notificaciones.</p>
+</li>
+<li>
+<p>Implemente la funcionalidad en Java.</p>
+</li>
+</ol>
+<h1><span><span><span>Ejercicio 2 – Encuentros Deportivos<br /></span></span></span></h1>
+<p>Se desea desarrollar una aplicación que concentre resultados de distintos encuentros deportivos (partido), y que distribuya los mismos a distintos servidores interesados en determinada información en particular.</p>
+<p>Cada vez que se lleva a cabo un partido, se ingresa en el servidor:</p>
+<ul>
+<li>el resultado (asumamos que simplemente se trata de un texto)</li>
+<li>los contrincantes (lista de nombres de contrincantes)</li>
+<li>el deporte</li>
+</ul>
+<p>Es importante tener en cuenta que los servidores que reciben la información, pueden estar suscriptos a un conjunto de deportes, por lo que podría pasar que haya servidores que solo  quieran recibir información de Tenis, otros de Futbol y Basquet y otros de Ping Pong. Esto quiere decir, que debe tener en cuenta a qué información están suscriptos para luego enviar las notificaciones.</p>
+<p>Además, existen aplicaciones móviles que le permiten a una persona recibir los resultados de aquellos deportes o contrincantes que les interesa. Para ello, se suscriben a la información relacionada a un deporte y/o un contrincante particular.</p>
+<p><strong>En las alternativas, es imprescindible que se minimice la interacción entre el servidor y las aplicaciones móviles. Esto significa que solamente se les puede enviar un mensaje a las aplicaciones móviles cuando se produzca una actualización de alguna de sus suscripciones.</strong></p>
+<ol>
+<li>Realice un diagrama de clases UML que modele una solución.</li>
+<li>Implemente en Java utilizando TDD.</li>
+</ol>
+<h1><span><span><span>Ejercicio 3 – Concursos de preguntas y respuestas<br /></span></span></span></h1>
+<p>En esta oportunidad necesitamos el desarrollo de un sistema para organizar un concurso de preguntas y respuestas.  En el juego se debe determinar, de un numero de participantes, el primero que llegue a responder correctamente las preguntas listadas en un cuestionario.</p>
+<p> </p>
+<p>En el juego participan solamente cinco participantes. La mecánica es la siguiente, cada participante debe solicitar sumarse a la siguiente partida. Luego de solicitar la participación, el jugador espera que el servidor del juego le notifique que esta listo para jugar. Con la notificación del servidor también recibe el listado con las cinco preguntas que conforman la partida. Una vez que el jugador fue notificado y conoce el listado de las preguntas, puede enviarle al servidor de a una por vez las respuestas a las preguntas que recibió. Esta acción, puede hacerla solamente después que el servidor le haya enviado la notificación de aceptación y hasta que el servidor decida que terminó el juego.</p>
+<p> </p>
+<p>Cada jugador puede enviar una única respuesta por vez y debe indicar a que pregunta corresponde. Por cada respuesta que recibe el servidor realiza las siguientes acciones:</p>
+<ul>
+<li><span>Verifica si la pregunta es correcta o no.</span></li>
+<li><span>En caso de ser correcta, contabiliza que el jugador que realizo la pregunta la respondió correctamente.</span></li>
+<li><span>Notifica al jugador que respondió correctamente.</span></li>
+<li><span>Notifica a todos los jugadores de la ronda, el nombre del jugador que respondió correctamente y el enunciado de la pregunta (sin incluir la respuesta).</span></li>
+<li><span>Si el jugador respondió correctamente a la ultima pregunta sin responder, finaliza la partida y notifica a todos los participantes el nombre del ganador.</span></li>
+</ul>
+<p>En caso de no ser correcta la respuesta, el juego solamente notifica al jugador que su respuesta no es correcta.</p>
+<p>El juego, está encargado de poder esperar jugadores para iniciar, una vez iniciado recibir las respuestas y notificar de los sucesos como fue indicado, además debe poder finalizarse. Todo lo anterior incluyendo las notificaciones pertinentes.</p>
+<p>Por su parte, el jugador debe poder desenvolverse en el desarrollo del juego sin poder realizar acciones no permitidas. Cuando las realiza debe notificarse en consola que esa acción no es permitida. Nota: no se tiene en cuenta el caso en que algún jugador quede fuera de una partida.</p>
+<p>Para este ejercicio debe realizar lo siguiente:</p>
+<ol>
+<li><span>Modelar una solución orientada a objetos utilizando un diagrama de clases UML.</span></li>
+<li><span>Indicar, si es que es posible, que patrones de diseño utilizo en su solución y los roles de las clases involucradas.</span></li>
+<li><span>Realice un test de unidad que permita verificar que cuando el servidor recibe una respuesta incorrecta, notifica correctamente.</span></li>
+<li>Implementar la funcionalidad en Java.</li>
+</ol>
+<p></p>
+<h1 lang="es-ES" align="justify"><span color="#548dd4"><span face="Arial, sans-serif"><span size="3"><span style="color: #000000; font-size: large;">Ejercicio 4 – Sistemas de Alarma</span><br /></span></span></span></h1>
+<p lang="es-ES" align="justify"><span color="#000000"><span face="Arial, sans-serif"><span size="3">Una Empresa de Seguridad se dedica a la instalación de Sistemas de Alarmas en inmuebles. Cada Sistema de Alarma instalado en un inmueble está monitoreado por la Empresa de Seguridad, y está constituido por los siguientes componentes:</span></span></span></p>
+<p lang="es-ES" align="justify"></p>
+<ul>
+<li size="3"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Una Central Local: es quien coordina a todos los componentes del Sistema de Alarma, por lo que todos estos componentes se conectan a esta central.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Tablero de Control: es la interfaz mediante la cual el usuario opera el Sistema de Alarma. Mediante este componente puede activar, desactivar y monitorear el sistema.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Sensores de Movimiento: son pequeños dispositivos que detectan movimiento en un área determinada, avisando a la central cuando lo detectan.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Sensores de Apertura: son pequeños dispositivos que detectan la apertura de puertas y ventanas, avisando a la central cuando la detectan.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Alarma: es el dispositivo sonoro (tipo sirena) que se activa por orden de la central.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Dispositivo de Comunicación: es el dispositivo que comunica al Sistema de Alarma con la Empresa de Seguridad, lo cual permite el monitoreo a distancia del inmueble. A través de él, la central local comunica a la empresa eventos tales como activación/desactivación del sistema y disparo de la alarma.</span></span></span></li>
+</ul>
+<p lang="es-ES" align="justify"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><br />Cada nuevo Sistema de Alarma se instala mediante los siguientes pasos:</span></span></span></p>
+<ol>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Instalación de una Central Local.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Instalación de un Tablero de Control.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Instalación de Sensores de Movimiento (cantidad especificada por el suario).</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Instalación de Sensores de Apertura (cantidad especificada por el usuario).</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Instalación de una Alarma.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Instalación de un Dispositivo de Comunicación.</span></span></span></li>
+</ol>
+<p lang="es-ES" align="justify"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><br />Si bien el proceso de instalación para todos los Sistemas de Alarmas es el anteriormente descripto, cada uno puede ser instalado de acuerdo a dos tipos distintos de configuración: Standard o de Alta Seguridad. La diferencia entre una y otra configuración es el tipo de componentes por los que está compuesto el sistema, de forma tal que los componentes de la segunda configuración son de mayor confiabilidad (vulnerabilidad, errores y falsos positivos) que los de la primera configuración. En este sentido, cada configuración tiene las siguientes particularidades.</span></span></span></p>
+<p lang="es-ES" align="justify"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><br />En la Configuración Standard se instalan sensores de movimiento infra-rojos, sensores de apertura magnéticos, un dispositivo de comunicación telefónico y una alarma que corresponde a un modelo básico.</span></span></span></p>
+<p lang="es-ES" align="justify"><span color="#000000"><span face="Arial, sans-serif"><span size="3">En la Configuración de Alta Seguridad se instalan sensores de movimiento por ultrasonido, sensores de apertura ópticos, el dispositivo de comunicación es de radiofrecuencia y la alarma corresponde a un modelo antirrobo, que se dispara ante el primer intento de remoción de su carcaza.<br /></span></span></span></p>
+<p lang="es-ES" align="justify"><span color="#000000"><span face="Arial, sans-serif"><span size="3">En cuanto a la Central Local y Tablero de Control, ambas configuraciones contemplan el uso del mismo tipo.<br /></span></span></span></p>
+<p lang="es-ES" align="justify"></p>
+<p lang="es-ES" align="justify"><span color="#000000"><span face="Arial, sans-serif"><span size="3"><span style="text-decoration: underline;">Tareas a realizar</span>:</span></span></span></p>
+<p></p>
+<ol>
+<li style="list-style-type: none;"><ol>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Especifique qué Patrón de Diseño cree apropiado aplicar en este contexto y por qué.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Diseñe un diagrama de clases que modele el problema.</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">Especifique la relación entre las clases de su modelo y los roles de las clases participantes del patrón de diseño seleccionado (según el libro de Gamma).</span></span></span></li>
+<li align="justify" lang="es-ES"><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3">No es necesario que implemente el patrón Observer, pero explique cómo ese patrón se articularía con el seleccionado aquí.</span></span></span></li>
+</ol></li>
+</ol>
+<p><span color="#000000" style="color: #000000;"><span face="Arial, sans-serif"><span size="3"></span></span></span> </p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_max_js.js"></script></body></html>
