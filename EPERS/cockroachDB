@@ -1,0 +1,87 @@
+https://www.baeldung.com/cockroachdb-java
+
+1) cockroach start --insecure --host=localhost;
+
+2) cockroach start --insecure --store=node2 \
+  --host=localhost --port=26258 --http-port=8081 \
+  --join=localhost:26257;
+
+3) cockroach start --insecure --store=node3 \
+  --host=localhost --port=26259 --http-port=8082 \
+  --join=localhost:26257;
+
+Cada nodo del cluster requieren valores de nombre, puerto y puerto http unicos.
+
+cockroach sql --insecure --port=26258
+
+CREATE DATABASE bichomon_hibernate;
+
+usuario broot:
+
+CREATE USER broot;
+GRANT ALL ON DATABASE bichomon_hibernate TO broot;
+
+SHOW DATABASES;
+
+Para verificar la replicacion automatica podemos chequear alguno de los nodos:
+
+cockroach sql --insecure --port=26258;
+
+También podemos monitorear el cluster y los nodos desde la interfaz:
+
+http://localhost:8080
+
+Salud del cluster,
+Metricas en tiempo real,
+Performance de SQL
+Detalles de las replicas
+Detalles de los nodos
+Detalles de la base de datos.
+
+Se puede usar Maven o Gradle para incorporarlo a Java.Agregar la dependencia en el POM.XML .
+
+Como tiene compatibilidad con postgreSQL se puede conectar directamente con JDBC y Hibernate.
+
+Ademas cada comando SQL es tratado como una transaccion, y se comitea una vez que se termina de ejecutar.
+
+TP:
+
+Agregamos el resource hibernateCockcroach.cfg.xml que tiene la conexion con postgres
+
+tuvimos que bajar el driver: org.postgresql.Driver
+
+la URL: jdbc:postgresql://localhost:26257/bichomon_hibernate
+
+usuario root sin contraseña por defecto en cockroach insecure.
+
+y el dialecto SQL: org.hibernate.dialect.PostgreSQLDialect
+
+Agregamos proveedor de sesiones como :
+
+SessionFactoryCockroach.
+
+para cambiar el seteo del archivo XML.
+
+y finalmente la modificacion en el Runner al nuevo SessionFactoryCockroach,
+
+por cuestiones de no cambiar el modelo original(por issues) duplicamos el test de bicho service ya que el destroy lo hace mediante el SessionFactory correspondiente.
+
+correr test de bichotest
+
+correr test de prueba
+
+verificar replicacion automatica 
+cockroach sql --insecure --host=localhost --port=26258
+
+
+
+
+
+
+
+
+
+
+
+
+

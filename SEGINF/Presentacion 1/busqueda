@@ -1,0 +1,27 @@
+1- Comprar un badusb (RubberDucky) 
+	-Limitaciones: Precio 50 dolares.
+
+2- Armar un badUSB desde cero con un pendrive.
+	-Limitaciones: Una unidad flash USB 3.0 con Phison 2303 (2251-03) de micro controlador.
+	-2303 Chip: EJ:
+	Kingston DataTraveler 3.0 T111 8GB
+	Silicon power marvel M60 64GB
+	Toshiba TransMemory-MX™ Black 16 GB
+	Patriot Stellar 64 Gb Phison
+	Silicon Power32G
+	
+3- Armar un celular con android que simule el ataque badUSB.
+	-Limitaciones: Un kernel particular que solo esta disponible para algunos dispositivos, con una aplicacion llamada Android Keyboard.
+
+4- Armar un celular con Kali NetHunter que simule el ataque. 
+	-Limitaciones: Kali NetHunter esta para celulares Nexus y OnePlus.
+
+5- Armar una maquina virtual que simule un android con nethunter.
+	Perdia la esencia de lo que se queria demostrar.
+
+video demostracion:
+
+HOTDOGED
+
+https://youtu.be/w2yadyr-lDU?t=40
+

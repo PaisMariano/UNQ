@@ -1,0 +1,5 @@
+for ip in $(nmap -n -p22 -sP 10.9.6.128/25 -oG - |awk '/Up$/{print $2}') ;do
+	echo $ip
+	sshpass -p "alumno" ssh -t alumno@$ip 'DISPLAY=:0 echo "alumno" | sudo -S poweroff'
+
+done

@@ -1,0 +1,64 @@
+package ar.edu.unq.epers.bichomon.backend.dao.impl;
+
+import java.util.List;
+
+import ar.edu.unq.epers.bichomon.backend.model.ubicacion.Ubicacion;
+import org.neo4j.driver.v1.AuthTokens;
+import org.neo4j.driver.v1.Driver;
+import org.neo4j.driver.v1.GraphDatabase;
+import org.neo4j.driver.v1.Session;
+import org.neo4j.driver.v1.StatementResult;
+import org.neo4j.driver.v1.Value;
+import org.neo4j.driver.v1.Values;
+
+
+/**
+ * PersonaNeo4jDAO encapsula el acceso a Neo4j
+ *
+ * @author cf
+ */
+public class Neo4jUbicacionDAO {
+
+    private Driver driver;
+
+    public Neo4jUbicacionDAO() {
+        this.driver = GraphDatabase.driver("bolt://localhost:7687", AuthTokens.basic("neo4j", "password"));
+    }
+
+    public void crearUbicacion(Ubicacion ubicacion){
+
+    Session session = this.driver.session();
+
+		try {
+
+        String query = "MERGE (n:Ubicacion {nombre: {elNombre}}) " +
+                "SET n.name = {elNombre} ";
+        session.run(query, Values.parameters("elNombre", ubicacion.getNombre()));
+
+            }   finally {
+                session.close();
+		                }
+    }
+
+    public Boolean esPosibleLlegar(Ubicacion ubicacionOrigen, Ubicacion ubicacionDestino){
+
+        Session session = this.driver.session();
+
+        try {
+
+            String query =  "MATCH  (ori:Ubicacion {nombre: {elNombreOrigen}}), " +
+                            "(des:Ubicacion {nombre: {elNombreDestino}}) " +
+                            "RETURN EXISTS( (ori)-[:CAMINO *1..]->(des) )";
+
+            StatementResult statementResult = session.run(query, Values.parameters("elNombreOrigen", ubicacionOrigen.getNombre(),
+                                                "elNombreDestino", ubicacionDestino.getNombre()));
+            System.out.println(statementResult.single().get(0).asBoolean());
+            return statementResult.single().get(0).asBoolean();
+            
+        }   finally {
+            session.close();
+        }
+
+    }
+
+}
