@@ -1,0 +1,13 @@
+como la disponibilidad de un servidor es fundamental para la seguridad se generan herramientas para probar la maxima capacidad de los servidores.
+
+osea que estas herramientas verifican la escalabilidad fiabilidad y uso de recursos.
+
+hay varias herramientas ejemplo 
+slowloris, 
+loic, low orbit ion cannon
+hoic, high orbit ion cannon 
+y la que vamos a usar lowhttptest mecanica lowloris. Abrir conexiones y agotar la cantidad de sockets del servidor.
+
+lowhttptest es una herramienta para simular ataques de denegacion de servicios. Es facil de instalar ya que esta en el repo de linux
+
+
