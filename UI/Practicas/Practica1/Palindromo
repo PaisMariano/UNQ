@@ -1,0 +1,16 @@
+
+fun main() {
+    print(esPalindromo("neuquen"));
+}
+public fun esPalindromo(str: String): Boolean{
+    var bandera = true;
+    var strLocal = str;
+    while (bandera == true && strLocal.length > 0){
+    	bandera = strLocal.first() == strLocal.last();
+        strLocal = strLocal.drop(1);
+        if (strLocal.length > 1){ //No es necesario Kotlin se da cuenta y no rompe.
+          	strLocal = strLocal.dropLast(1);
+        }
+    }
+    return bandera;
+}
