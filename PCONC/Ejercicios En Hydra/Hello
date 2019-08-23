@@ -1,0 +1,10 @@
+thread T1:
+	while (true) {
+		print("hello");
+		sleep(3000);
+	}
+thread T2:
+	while (true) {
+		print("Adios");
+		sleep(5000);
+	}

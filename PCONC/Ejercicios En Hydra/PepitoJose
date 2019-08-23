@@ -1,0 +1,17 @@
+thread T1: {
+	while(true){
+		print("Hola");
+		sleep(2000);
+		print("Pepe");
+		sleep(2000);
+	}
+}
+
+thread T2: {
+	while(true){
+		print("Hola");
+		sleep(1000);
+		print("Jose");
+		sleep(1000);
+	}
+}

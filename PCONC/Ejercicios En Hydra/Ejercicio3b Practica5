@@ -1,0 +1,21 @@
+global Semaphore entraMujer = new Semaphore(1);
+global Semaphore entraHombre = new Semaphore(0);
+global Integer cont = 0;
+
+thread Mujer : {
+while(true){
+	entraMujer.acquire();
+	if (cont < 50){
+		cont = cont + 1;
+		print("Entra Mujer" + cont);}
+	entraHombre.release();
+}}
+
+thread Hombre : {
+while(true){
+	entraHombre.acquire();
+	if (cont < 50){
+		cont = cont + 1;
+		print("Entra hombre" + cont);}
+	entraMujer.release();
+}}

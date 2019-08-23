@@ -1,0 +1,51 @@
+global Semaphore mutexC = new Semaphore(1);
+global Semaphore mutexA = new Semaphore(1);
+global Semaphore mutexP = new Semaphore(1);
+global Semaphore permisoCargaA = new Semaphore(1);
+global Semaphore permisoDescargaC = new Semaphore(1);
+global Semaphore capacidad = new Semaphore(6);
+global Integer camiones = 0;
+global Integer autos = 0;
+
+
+thread Camion : {
+	while(true){
+		mutexC.acquire();
+		camiones++;
+		if (camiones == 1)
+			permisoCargaA.acquire();
+		mutexC.release();
+		permisoDescargaC.acquire();
+		print("Descarga Camion");
+		permisoDescargaC.release();
+		mutexC.acquire();
+		camiones--;
+		if (camiones == 0)
+			permisoCargaA.release();
+		mutexC.release();
+	}
+}
+
+thread Auto : {
+	while(true){
+		mutexP.acquire();
+		permisoCargaA.acquire();
+		mutexA.acquire();
+		autos++;
+		if (autos == 1)
+			permisoDescargaC.acquire();
+		mutexA.release();
+		permisoCargaA.release();
+		mutexP.release();
+		
+		capacidad.acquire();
+		print("Carga Auto");
+		capacidad.release();
+		
+		mutexA.acquire();
+		autos--;
+		if (autos == 0)
+			permisoDescargaC.release();
+		mutexA.release();
+	}
+}

@@ -1,0 +1,12 @@
+global int n = 0;
+
+thread T1: {
+	while(n < 2){
+		print(n);
+	}
+}
+
+thread T2: {
+	n = n + 1;
+	n = n + 1;
+}

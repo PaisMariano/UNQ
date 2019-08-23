@@ -1,0 +1,10 @@
+global int n = 0;
+thread T1: 
+	while (n < 1)
+	n = n + 1;
+	print(n);
+
+thread T2:
+	while (n >= 0)
+	n = n - 1;
+	print(n);

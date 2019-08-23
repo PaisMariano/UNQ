@@ -1,0 +1,25 @@
+global Semaphore mutex1 = new Semaphore(1);
+global Semaphore mutex2 = new Semaphore(0);
+global Semaphore mutex3 = new Semaphore(0);
+global int x = 0;
+
+thread t1: {
+	mutex1.acquire();
+	x = x + 1;
+	mutex1.release();
+}
+thread t2: {
+	mutex1.acquire();
+	x = x + 2;
+	mutex1.release();
+}
+thread t3: {
+	mutex1.acquire();
+	x = x + 3;
+	mutex1.release();
+}
+while(true){
+	print(x);
+}
+
+

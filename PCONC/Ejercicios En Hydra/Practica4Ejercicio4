@@ -1,0 +1,50 @@
+global Semaphore mutex1 = new Semaphore(0);
+global Semaphore mutex2 = new Semaphore(0);
+global Semaphore mutex3 = new Semaphore(0);
+thread t1: {
+	private int a = 0;
+	private int c = 0;
+	while (true) {
+		print("A");
+		a = a + 1;
+		mutex2.release();
+		print("B");
+		mutex1.acquire();
+		print("C");
+		c = c + 1;
+		print("D");
+		print("A vale " + a);
+		print("C vale " + c);
+
+	}
+}
+thread t2: {
+	private int f = 0;
+	private int e = 0;
+	private int g = 0;
+	while (true) {
+		print("E");
+		mutex3.release();
+		mutex2.acquire();
+		print("F");
+		f = f + 1;
+		e = e + 1;
+		g = g + 1;
+		print("G");
+		mutex1.release();
+		print("F vale " + f);
+		print("G vale " + g);
+		print("E vale " + e);
+	}
+}
+thread t3: {
+	private int h = 0;
+	while (true) {
+		mutex3.acquire();
+		print("H");
+		h = h + 1;
+		print("I");
+		print("H vale " + h);
+	}
+}
+
