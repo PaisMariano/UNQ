@@ -1,0 +1,31 @@
+Instalacion: 
+
+sudo apt-get update
+
+sudo apt-get install mysql-server
+
+root sin contraseña (No pifiarle porque cambiarla es una paja)
+
+*FIN*
+
+
+para correr el servicio:
+
+sudo systemctl start mysql
+
+
+si queremos correrlo cuando arranca linux: 
+
+sudo systemctl enable mysql  (No conviene por los recursos)
+
+
+para restartear el servicio:
+
+sudo systemctl restart mysql
+
+
+para empezar o tirar querys
+
+sudo mysql
+
+create schema veterinaria; (ENTER)

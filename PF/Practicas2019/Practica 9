@@ -1,0 +1,59 @@
+Ejercicio 1)
+
+data EA = Const Int | BOp BinOp EA EA
+data BinOp = Sum | Mul
+
+a. implementar las siguientes funciones:
+i)
+evalEA :: EA -> Int
+evalEA (Const n)     = n
+evalEA (BOp b e1 e2) = b (evalEA e1) (evalEA e2)
+ii)
+ea2ExpA :: EA -> ExpA
+ea2ExpA (Const n)     = Cte n	
+ea2ExpA (BOp b e1 e2) = armarExpA b (ea2ExpA e1) (ea2ExpA e2)
+
+armarExpA :: BinOp -> (ExpA -> ExpA -> ExpA)
+armarExpA Sum = Sum 
+armarExpA Mul = Prod
+
+b. demostrar la siguiente propiedad:
+
+evalExpA . ea2ExpA = evalEA
+
+Por ppio. de extensionalidad 
+
+Para todo ea :: EA - evalExpA(ea2ExpA ea) = evalEA ea
+
+DEM: por ppio de induccion en la estructura de ea
+
+CASO BASE:
+
+evalExpA(ea2ExpA (Const n) = evalEA (Const n)
+def ea2ExpA 1				def evalEA
+	evalExpA(Cte n) = n
+def evalExpA 1
+	n
+
+CASO INDUCTIVO:
+	evalExpA(ea2ExpA (b e1 e2) = evalEA (BOp b e1 e2)
+def ea2ExpA 2
+	evalExpA(armarExpA b (ea2ExpA e1) (ea2ExpA e2) = 
+(lema)
+	evalExpA(armarExpA Sum e1 e2) = evalEA e1 + evalEA e2   (1)
+y
+	evalExpA(armarExpA Mul e1 e2) = evalEA e1 * evalEA e2   (2)
+
+(1)
+def armarExpA 1
+	evalExpA(Sum e1 e2) 
+def evalExpA 2
+	evalExpA e1 + evalExpA e2
+
+(2)
+def armarExpA 2
+	evalExpA(Mul e1 e2)
+def evalExpA 3
+	evalExpA e1 * evalExpA e2
+
+
