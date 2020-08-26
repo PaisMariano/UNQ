@@ -1,0 +1,7 @@
+sudo npm init
+sudo npm install
+sudo docker build -t ejercicio5 -f Dockerfile .
+sudo docker run --name ejercicio5 --user node ejercicio5
+
+//Para volver a correrlo 
+sudo docker start -ai ejercicio5
